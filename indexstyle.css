@@ -115,18 +115,16 @@ h5 {
   transition: all 0.5s;
 }
 .btn-important {
-  background-color: #3a3a3a;
-  color: #ffd251;
+  background-color: #34eaab;
+  color: #1b1c1e;
   padding: 1rem 2rem;
-  border-radius: 50px;
-  font-size: 0.8rem;
-  font-weight: 400;
+  font-weight: 700;
   align-self: center;
+  text-transform: lowercase;
 }
 .btn-important:hover {
   cursor: pointer;
   background-color: #ffd251;
-  color: #1b1c1e;
   transition: all 0.5s;
 }
 .btn-caption:hover {
@@ -275,7 +273,6 @@ main #main-container .display-card {
 main #main-container .display-card .img-wrapper {
   height: 100%;
   overflow: hidden;
-  overflow-x: auto;
   position: relative;
   cursor: pointer;
 }
@@ -284,6 +281,12 @@ main #main-container .display-card .img-wrapper img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  vertical-align: middle;
+  transform-origin: bottom center;
+}
+main #main-container .display-card .img-wrapper img:hover {
+  transform: scale(1.2);
+  transition: all 3s ease;
 }
 main #main-container .display-card .video-wrapper {
   position: relative;

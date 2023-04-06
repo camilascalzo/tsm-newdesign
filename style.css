@@ -492,7 +492,6 @@ main #main-container .display-card {
 main #main-container .display-card .img-wrapper {
   height: 100%;
   overflow: hidden;
-  overflow-x: auto;
   position: relative;
   cursor: pointer;
 }
@@ -501,6 +500,12 @@ main #main-container .display-card .img-wrapper img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  vertical-align: middle;
+  transform-origin: bottom center;
+}
+main #main-container .display-card .img-wrapper img:hover {
+  transform: scale(1.2);
+  transition: all 3s ease;
 }
 main #main-container .display-card .video-wrapper {
   position: relative;
@@ -1044,24 +1049,22 @@ body header nav .burguer #burguer-lines .line-1, body header nav .burguer #burgu
 body #section-portfolio {
   padding: 12rem 0 4rem 0;
   display: flex;
-  flex-direction: column;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 body #section-portfolio .portfolio-wrapper {
-  height: auto;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
+  max-width: 250px;
   background-color: #1b1c1e;
   box-shadow: 10px 10px 20px #171819, -5px -5px 5px #1f2023;
 }
 body #section-portfolio .portfolio-wrapper .portfolio-img-wrapper {
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-body #section-portfolio .portfolio-wrapper .portfolio-img-wrapper .img-vertical {
-  height: 15rem;
+  min-height: 20%;
+  overflow: hidden;
+  background-color: #f00064;
+  background: url("./img/main-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 body #section-portfolio .portfolio-wrapper .portfolio-img-wrapper img {
   height: 100%;
@@ -1070,28 +1073,22 @@ body #section-portfolio .portfolio-wrapper .portfolio-img-wrapper img {
      object-fit: scale-down;
 }
 body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
+  padding: 1rem;
 }
-body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-header-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-header-wrapper .portfolio-header-text .title {
+body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-header-text .title {
   font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 900;
   color: #e9e4e4;
 }
-body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-header-wrapper .portfolio-header-text .title i {
+body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-header-text .title i {
   margin-left: 0.5rem;
   font-size: 0.7rem;
 }
-body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-header-wrapper .portfolio-header-text .title:hover {
+body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-header-text .title:hover {
   color: #f00064;
 }
-body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-header-wrapper .portfolio-header-text .subtitle {
+body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-header-text .subtitle {
   font-size: 1.3rem;
   text-transform: uppercase;
   margin-top: -0.5rem;
@@ -1099,45 +1096,27 @@ body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-he
   color: #ffd251;
   font-weight: 900;
 }
-body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-header-wrapper .portfolio-trailer-wrapper {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #1b1c1e;
-  box-shadow: 10px 10px 20px #171819, -5px -5px 5px #1f2023;
-}
-body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-header-wrapper .portfolio-trailer-wrapper a {
-  text-transform: uppercase;
-  padding: 0 0.5rem;
-  color: #171819;
-  color: #e9e4e4;
-  line-height: 1;
-  font-weight: 900;
-}
-body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper h5 {
-  letter-spacing: 1px;
+body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper {
   text-transform: uppercase;
 }
-body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper h5 .h5-span {
-  font-weight: 300;
-  font-size: 0.8rem;
+body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper .portfolio-content-title {
+  font-weight: 500;
   line-height: 1.1;
-  display: block;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
 }
-body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper h5 a {
+body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper .portfolio-content-subtitle, body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper .subtitle-link {
   color: #34eaab;
-  line-height: 0.8;
-  font-size: 1.5rem;
+  line-height: 0.9;
+  font-size: 1rem;
   font-weight: 900;
-  letter-spacing: -1px;
 }
-body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper h5 a i {
+body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper .portfolio-content-subtitle .subtitle-link i, body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper .subtitle-link .subtitle-link i {
   font-size: 0.8rem;
   margin-left: 0.5rem;
 }
-body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper h5 a:hover {
+body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper .portfolio-content-subtitle .subtitle-link:hover, body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper .subtitle-link .subtitle-link:hover {
   color: #f00064;
 }
 body #section-portfolio .portfolio-wrapper .modal-portfolio-carousel {
@@ -1151,6 +1130,8 @@ body #section-portfolio .portfolio-wrapper .modal-portfolio-carousel {
   height: 100vh;
   z-index: 10;
   background-color: rgba(41, 40, 40, 0.8);
+  background: url("/img/main-bg.png");
+  background-size: contain;
   animation-name: modalopen;
   animation-duration: 1.5s;
 }
@@ -1232,6 +1213,9 @@ body #section-portfolio .portfolio-wrapper .modal-portfolio-carousel .modal-port
 body #section-portfolio .portfolio-wrapper .modal-portfolio-carousel .modal-portfolio-wrapper .modal-portfolio-video-wrapper .carousel-btn-container button:hover {
   background-color: #ffd251;
   color: #1b1c1e;
+}
+body #section-portfolio .portfolio-wrapper .test {
+  display: block;
 }
 @keyframes modalopen {
   from {
