@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+.container-9 {
+  width: 90%;
+  margin: auto;
+}
+.container-8 {
+  width: 80%;
+  margin: auto;
+}
+.container-7 {
+  width: 70%;
+  margin: auto;
+}
+.container-6 {
+  width: 60%;
+  margin: auto;
+}
+.container-5 {
+  width: 50%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.p-u {
+  text-transform: uppercase;
+}
+
+.p-custom {
+  color: #ffd251;
+}
+
+h5 {
+  line-height: 2;
+}
+
+.watch-btn, .watch-trailer {
+  text-transform: uppercase;
+  color: #e9e4e4;
+}
+.watch-btn i, .watch-trailer i {
+  padding-right: 0.3rem;
+}
+.watch-btn:hover, .watch-trailer:hover {
+  color: #ffd251;
+  cursor: pointer;
+}
+
+.bg-dark {
+  background-color: #3a3a3a;
+}
+.bg-light {
+  background-color: #e9e4e4;
+}
+
+.btn-dark {
+  background-color: #1b1c1e;
+  color: #e9e4e4;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+}
+.btn-dark:hover {
+  background-color: #e9e4e4;
+  color: #1b1c1e;
+  transition: all 0.5s;
+}
+.btn-light {
+  background-color: #e9e4e4;
+  color: #1b1c1e;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+}
+.btn-light:hover {
+  cursor: pointer;
+  background-color: #3a3a3a;
+  color: #e9e4e4;
+  transition: all 0.5s;
+}
+.btn-custom {
+  background-color: #ffd251;
+  color: #1b1c1e;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+}
+.btn-custom:hover {
+  cursor: pointer;
+  background-color: #3a3a3a;
+  color: #ffd251;
+  transition: all 0.5s;
+}
+.btn-modal {
+  background-color: #ffd251;
+  color: #3a3a3a;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+}
+.btn-modal:hover {
+  cursor: pointer;
+  background-color: #1b1c1e;
+  color: #ffd251;
+  transition: all 0.5s;
+}
+.btn-important {
+  background-color: #34eaab;
+  color: #1b1c1e;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  align-self: center;
+  text-transform: lowercase;
+}
+.btn-important:hover {
+  cursor: pointer;
+  background-color: #ffd251;
+  transition: all 0.5s;
+}
+.btn-caption:hover {
+  color: #ffd251;
+}
+
+.separator {
+  border: none;
+  background-color: #ffd251;
+  height: 1.5px;
+  width: 100px;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+
+.px-1 {
+  padding: 0 1rem;
+}
+.px-2 {
+  padding: 0 2rem;
+}
+.px-3 {
+  padding: 0 3rem;
+}
+.px-4 {
+  padding: 0 4rem;
+}
+
+.pa-1 {
+  padding: 1rem;
+}
+.pa-2 {
+  padding: 2rem;
+}
+.pa-3 {
+  padding: 0 3rem;
+}
+.pa-4 {
+  padding: 0 4rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+.my-4 {
+  margin: 4rem 0;
+}
+
+.mx-1 {
+  margin: 0 1rem;
+}
+.mx-2 {
+  margin: 0 2rem;
+}
+.mx-3 {
+  margin: 0 3rem;
+}
+.mx-4 {
+  margin: 0 4rem;
+}
+
+.my-1 {
+  margin: 1rem;
+}
+.my-2 {
+  margin: 2rem;
+}
+.my-3 {
+  margin: 3rem;
+}
+.my-4 {
+  margin: 4rem;
+}
+
+#section-about {
+  padding-top: 12rem;
+  padding-bottom: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+#section-about .about-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffd251;
+}
+#section-about .about-img-wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+#section-about .about-img-wrapper .figcaption {
+  height: 100%;
+  font-weight: 900;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 3rem;
+  color: #ffa700;
+  text-transform: uppercase;
+  line-height: 0.8;
+}
+#section-about .about-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  font-size: 1rem;
+}
+#section-about .about-text-wrapper .title {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+#section-about .about-text-wrapper .subtitle {
+  color: #ffd251;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: 900;
+  line-height: 0.8;
+}
+#section-about .about-text-wrapper .about-text {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+#section-about .about-text-wrapper .about-text .about-text-important {
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  color: #1b1c1e;
+}
+#section-about .about-text-wrapper .about-text .pink {
+  background-color: #f00064;
+}
+#section-about .about-text-wrapper .about-text .green {
+  background-color: #34eaab;
+}/*# sourceMappingURL=aboutstyle.css.map */

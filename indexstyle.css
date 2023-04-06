@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+.container-9 {
+  width: 90%;
+  margin: auto;
+}
+.container-8 {
+  width: 80%;
+  margin: auto;
+}
+.container-7 {
+  width: 70%;
+  margin: auto;
+}
+.container-6 {
+  width: 60%;
+  margin: auto;
+}
+.container-5 {
+  width: 50%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.p-u {
+  text-transform: uppercase;
+}
+
+.p-custom {
+  color: #ffd251;
+}
+
+h5 {
+  line-height: 2;
+}
+
+.watch-btn, .watch-trailer {
+  text-transform: uppercase;
+  color: #e9e4e4;
+}
+.watch-btn i, .watch-trailer i {
+  padding-right: 0.3rem;
+}
+.watch-btn:hover, .watch-trailer:hover {
+  color: #ffd251;
+  cursor: pointer;
+}
+
+.bg-dark {
+  background-color: #3a3a3a;
+}
+.bg-light {
+  background-color: #e9e4e4;
+}
+
+.btn-dark {
+  background-color: #1b1c1e;
+  color: #e9e4e4;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+}
+.btn-dark:hover {
+  background-color: #e9e4e4;
+  color: #1b1c1e;
+  transition: all 0.5s;
+}
+.btn-light {
+  background-color: #e9e4e4;
+  color: #1b1c1e;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+}
+.btn-light:hover {
+  cursor: pointer;
+  background-color: #3a3a3a;
+  color: #e9e4e4;
+  transition: all 0.5s;
+}
+.btn-custom {
+  background-color: #ffd251;
+  color: #1b1c1e;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+}
+.btn-custom:hover {
+  cursor: pointer;
+  background-color: #3a3a3a;
+  color: #ffd251;
+  transition: all 0.5s;
+}
+.btn-modal {
+  background-color: #ffd251;
+  color: #3a3a3a;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+}
+.btn-modal:hover {
+  cursor: pointer;
+  background-color: #1b1c1e;
+  color: #ffd251;
+  transition: all 0.5s;
+}
+.btn-important {
+  background-color: #3a3a3a;
+  color: #ffd251;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  align-self: center;
+}
+.btn-important:hover {
+  cursor: pointer;
+  background-color: #ffd251;
+  color: #1b1c1e;
+  transition: all 0.5s;
+}
+.btn-caption:hover {
+  color: #ffd251;
+}
+
+.separator {
+  border: none;
+  background-color: #ffd251;
+  height: 1.5px;
+  width: 100px;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+
+.px-1 {
+  padding: 0 1rem;
+}
+.px-2 {
+  padding: 0 2rem;
+}
+.px-3 {
+  padding: 0 3rem;
+}
+.px-4 {
+  padding: 0 4rem;
+}
+
+.pa-1 {
+  padding: 1rem;
+}
+.pa-2 {
+  padding: 2rem;
+}
+.pa-3 {
+  padding: 0 3rem;
+}
+.pa-4 {
+  padding: 0 4rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+.my-4 {
+  margin: 4rem 0;
+}
+
+.mx-1 {
+  margin: 0 1rem;
+}
+.mx-2 {
+  margin: 0 2rem;
+}
+.mx-3 {
+  margin: 0 3rem;
+}
+.mx-4 {
+  margin: 0 4rem;
+}
+
+.my-1 {
+  margin: 1rem;
+}
+.my-2 {
+  margin: 2rem;
+}
+.my-3 {
+  margin: 3rem;
+}
+.my-4 {
+  margin: 4rem;
+}
+
+main #main-container {
+  margin-top: 15rem;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-areas: "img-14 img-1 img-2 img-3" "img-4 img-5 img-6 img-7" "img-13 img-10 img-10 img-10" "img-9 img-9 img-9 img-8" "img-11 img-11 img-12 img-12";
+}
+main #main-container #img-1 {
+  grid-area: img-1;
+}
+main #main-container #img-2 {
+  grid-area: img-2;
+}
+main #main-container #img-3 {
+  grid-area: img-3;
+}
+main #main-container #img-4 {
+  grid-area: img-4;
+}
+main #main-container #img-5 {
+  grid-area: img-5;
+}
+main #main-container #img-6 {
+  grid-area: img-6;
+}
+main #main-container #img-7 {
+  grid-area: img-7;
+}
+main #main-container #img-8 {
+  grid-area: img-8;
+}
+main #main-container #img-9 {
+  grid-area: img-9;
+}
+main #main-container #img-10 {
+  grid-area: img-10;
+}
+main #main-container #img-11 {
+  grid-area: img-11;
+}
+main #main-container #img-12 {
+  grid-area: img-12;
+}
+main #main-container #img-13 {
+  grid-area: img-13;
+}
+main #main-container #img-14 {
+  grid-area: img-14;
+}
+main #main-container .display-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 25%;
+}
+main #main-container .display-card .img-wrapper {
+  height: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+  position: relative;
+  cursor: pointer;
+}
+main #main-container .display-card .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #main-container .display-card .video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  height: 100%;
+}
+main #main-container .display-card .video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+main #main-container .display-card .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: 10;
+  background-color: #ffd251;
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+main #main-container .display-card .modal .modal-content {
+  margin: 2rem auto;
+  max-width: 85%;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+main #main-container .display-card .modal .modal-content .close-modal-btn {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #462ad6;
+  font-size: 1.5rem;
+  align-self: flex-end;
+  cursor: pointer;
+  z-index: 100;
+}
+main #main-container .display-card .modal .modal-content .close-modal-btn:hover {
+  color: #f00064;
+}
+main #main-container .display-card .modal .modal-content .close-modal-btn:active {
+  color: #292828;
+}
+main #main-container .display-card .modal .modal-content .modal-header .modal-header-title {
+  font-size: 2rem;
+  color: #ffa700;
+  font-weight: 900;
+}
+main #main-container .display-card .modal .modal-content .modal-header .modal-header-subtitle {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-top: -1.5rem;
+  color: #1b1c1e;
+}
+main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-title {
+  font-size: 1.3rem;
+  letter-spacing: 0;
+  margin-top: 0.8rem;
+  color: #ffa700;
+  font-weight: 900;
+}
+main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: -1rem;
+  color: #1b1c1e;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle .modal-info-subtitle-link {
+  color: #1b1c1e;
+}
+main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle .modal-info-subtitle-link .modal-link-icon {
+  font-size: 1rem;
+  margin-left: 0.8rem;
+}
+main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle .modal-info-subtitle-link:hover {
+  color: #f00064;
+}
+main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-award {
+  color: #462ad6;
+  font-size: 1.1rem;
+  letter-spacing: 0;
+  font-weight: 900;
+  display: block;
+}
+main #main-container .display-card .modal .modal-content .trailer-container {
+  display: flex;
+  margin-top: 1.5rem;
+}
+main #main-container .display-card .modal .modal-content .trailer-container a {
+  text-transform: lowercase;
+  font-weight: 700;
+  font-size: 1.1rem;
+  background-color: #ffa700;
+  padding: 1rem;
+  color: #1b1c1e;
+  letter-spacing: 0;
+}
+main #main-container .display-card .modal .modal-content .trailer-container a:hover {
+  background-color: #34eaab;
+  color: #1b1c1e;
+  transition: all 0.3s;
+}
+main #main-container .display-card .test {
+  display: flex;
+}/*# sourceMappingURL=indexstyle.css.map */

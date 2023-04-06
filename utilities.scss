@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+//colors
+// $primary-color: #F7F7F7;
+$primary-color: #222222;
+$primary-color: #1b1c1e;
+// $secondary-color: #B43831;
+// $secondary-color: #ffa700;
+$secondary-color: #ffd251;
+// $secondary-color: #e69600;
+$light-color: #e9e4e4;
+// $light-color: #fff;
+$prueba-color: #DBD9D9;
+//$mid-color: #575859;
+$mid-color: #3a3a3a;
+$dark-color: #292828;
+$pink: #f00064;
+$blue: #462ad6;
+$green: #34eaab;
+$yellow:#ffa700;
+//general
+.container {
+    &-9 {width: 90%; margin: auto;}
+    &-8 {width: 80%; margin: auto;}
+    &-7 {width: 70%; margin: auto;}
+    &-6 {width: 60%; margin: auto;}
+    &-5 {width: 50%; margin: auto;}
+  }
+
+//style
+a {text-decoration: none; 
+  text-transform: uppercase;
+  &:hover {cursor: pointer;}
+}
+
+ul {list-style: none;}
+
+.p-u {text-transform: uppercase;}
+.p-custom {color: $secondary-color}
+// .title, .subtitle, .parr {font-weight: 300;}
+
+h5 {line-height: 2;}
+
+
+
+// .current {
+//   // border-bottom: 2px solid $secondary-color;
+
+// 	width: 5rem;
+// 	height: 5rem;
+// 	color: red;
+	
+  
+// }
+
+.watch-btn, .watch-trailer {
+  text-transform: uppercase;
+  color: $light-color;
+  i{padding-right: 0.3rem;}
+  &:hover {color: $secondary-color; cursor: pointer;}
+}
+
+
+
+//bg
+.bg {
+  &-dark {background-color: $mid-color;}
+  &-light {background-color: $light-color;}
+}
+
+//btn
+.btn {
+  &-dark {
+    background-color: $primary-color;
+    color: $light-color;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    &:hover {
+      background-color: $light-color;
+      color: $primary-color;
+      transition: all 0.5s;
+      
+    }
+  }
+  &-light {
+    background-color: $light-color;
+    color: $primary-color;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    &:hover {
+      cursor: pointer;
+      background-color: $mid-color;
+      color: $light-color;
+      transition: all 0.5s;
+    }
+  }
+  &-custom {
+    background-color: $secondary-color;
+    color: $primary-color;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    &:hover {
+      cursor: pointer;
+      background-color: $mid-color;
+      color: $secondary-color;
+      transition: all 0.5s;
+    }
+  }
+  &-modal{ 
+    background-color: $secondary-color;
+    color: $mid-color;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    &:hover {
+      cursor: pointer;
+      background-color: $primary-color;
+      color: $secondary-color;
+      transition: all 0.5s;
+    }
+  }
+  &-important{
+    background-color: $green;
+    color: $primary-color;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    align-self: center;
+		text-transform: lowercase;
+    &:hover {
+      cursor: pointer;
+      background-color: $secondary-color;
+      transition: all 0.5s; 
+    }
+  }
+  &-caption {
+    //border: 1px solid $light-color;
+    //color: $light-color;
+    //padding: 0.3rem 1rem;
+    //border-radius: 50%;
+    //font-size: 1rem;
+    //font-weight: bold;
+    &:hover {
+      color: $secondary-color;
+     // border: 1px solid $secondary-color;
+    }
+  }
+  
+}
+
+.separator {
+    border: none;
+    background-color: $secondary-color;
+    height: 1.5px;
+    width: 100px;
+}
+
+//padding
+.py {
+    &-1 {padding: 1rem 0;}
+    &-2 {padding: 2rem 0;}
+    &-3 {padding: 3rem 0;}
+    &-4 {padding: 4rem 0;}
+  }
+  .px {
+    &-1 {padding: 0 1rem;}
+    &-2 {padding: 0 2rem;}
+    &-3 {padding: 0 3rem;}
+    &-4 {padding: 0 4rem;}
+  }
+  .pa {
+    &-1 {padding: 1rem;}
+    &-2 {padding: 2rem;}
+    &-3 {padding: 0 3rem;}
+    &-4 {padding: 0 4rem;}
+
+  }
+  
+  //margin
+  .my {
+    &-1 {margin: 1rem 0;}
+    &-2 {margin: 2rem 0;}
+    &-3 {margin: 3rem 0;}
+    &-4 {margin: 4rem 0;}
+  }
+  .mx {
+    &-1 {margin: 0 1rem;}
+    &-2 {margin: 0 2rem;}
+    &-3 {margin: 0 3rem;}
+    &-4 {margin: 0 4rem;}
+  }
+  .my {
+    &-1 {margin: 1rem;}
+    &-2 {margin: 2rem;}
+    &-3 {margin: 3rem;}
+    &-4 {margin: 4rem;}
+  }
+
+  
