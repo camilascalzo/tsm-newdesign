@@ -310,8 +310,6 @@ main #main-container .display-card .modal {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100vw;
-  min-height: 100vh;
   z-index: 10;
   background-color: #ffd251;
   animation-name: modalopen;

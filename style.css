@@ -529,8 +529,6 @@ main #main-container .display-card .modal {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100vw;
-  min-height: 100vh;
   z-index: 10;
   background-color: #ffd251;
   animation-name: modalopen;
@@ -1049,22 +1047,19 @@ body header nav .burguer #burguer-lines .line-1, body header nav .burguer #burgu
 body #section-portfolio {
   padding: 12rem 0 4rem 0;
   display: flex;
-  gap: 0.7rem;
+  gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
 }
 body #section-portfolio .portfolio-wrapper {
+  min-width: 120px;
   max-width: 250px;
+  height: 100%;
   background-color: #1b1c1e;
   box-shadow: 10px 10px 20px #171819, -5px -5px 5px #1f2023;
 }
 body #section-portfolio .portfolio-wrapper .portfolio-img-wrapper {
-  min-height: 20%;
   overflow: hidden;
-  background-color: #f00064;
-  background: url("./img/main-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 body #section-portfolio .portfolio-wrapper .portfolio-img-wrapper img {
   height: 100%;
@@ -1074,47 +1069,50 @@ body #section-portfolio .portfolio-wrapper .portfolio-img-wrapper img {
 }
 body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper {
   padding: 1rem;
+  text-transform: uppercase;
+}
+body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-header-text {
+  line-height: 1;
 }
 body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-header-text .title {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  font-weight: 900;
+  font-size: 0.7rem;
   color: #e9e4e4;
 }
+body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-header-text .title h3 {
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.5rem;
+}
 body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-header-text .title i {
-  margin-left: 0.5rem;
-  font-size: 0.7rem;
+  margin-left: 0.3rem;
+  font-size: 0.6rem;
 }
 body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-header-text .title:hover {
   color: #f00064;
 }
 body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-header-text .subtitle {
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
-  margin-top: -0.5rem;
-  letter-spacing: -1px;
+  line-height: 1;
   color: #ffd251;
   font-weight: 900;
 }
-body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper {
-  text-transform: uppercase;
-}
 body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper .portfolio-content-title {
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.1;
-  margin-top: 1rem;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
+  margin-top: 0.8rem;
+  font-size: 0.6rem;
 }
 body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper .portfolio-content-subtitle, body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper .subtitle-link {
   color: #34eaab;
-  line-height: 0.9;
-  font-size: 1rem;
+  line-height: 1.5;
+  font-size: 0.8rem;
   font-weight: 900;
 }
 body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper .portfolio-content-subtitle .subtitle-link i, body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper .subtitle-link .subtitle-link i {
-  font-size: 0.8rem;
-  margin-left: 0.5rem;
+  margin-left: 0.3rem;
+  font-size: 0.6rem;
 }
 body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper .portfolio-content-subtitle .subtitle-link:hover, body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper .subtitle-link .subtitle-link:hover {
   color: #f00064;
@@ -1191,31 +1189,19 @@ body #section-portfolio .portfolio-wrapper .modal-portfolio-carousel .modal-port
   left: 0;
   right: 0;
 }
-body #section-portfolio .portfolio-wrapper .modal-portfolio-carousel .modal-portfolio-wrapper .modal-portfolio-video-wrapper .carousel-btn-container {
-  width: 70%;
-  text-align: center;
-}
 body #section-portfolio .portfolio-wrapper .modal-portfolio-carousel .modal-portfolio-wrapper .modal-portfolio-video-wrapper .carousel-btn-container button {
   cursor: pointer;
   border: none;
-  background-color: #e9e4e4;
+  background-color: #34eaab;
   color: #1b1c1e;
-  padding: 0.5rem 1rem;
-  box-shadow: none;
-  border-radius: 50px;
-  margin: 1.5rem 1rem;
-  font-size: 1rem;
-  font-weight: 700;
-}
-body #section-portfolio .portfolio-wrapper .modal-portfolio-carousel .modal-portfolio-wrapper .modal-portfolio-video-wrapper .carousel-btn-container button:focus {
-  outline: none;
+  padding: 0.3rem 0.5rem;
+  margin-top: 2rem;
+  font-weight: 900;
+  font-size: 1.2rem;
+  letter-spacing: -1px;
 }
 body #section-portfolio .portfolio-wrapper .modal-portfolio-carousel .modal-portfolio-wrapper .modal-portfolio-video-wrapper .carousel-btn-container button:hover {
   background-color: #ffd251;
-  color: #1b1c1e;
-}
-body #section-portfolio .portfolio-wrapper .test {
-  display: block;
 }
 @keyframes modalopen {
   from {
@@ -1402,37 +1388,6 @@ body footer .footer-wrapper #footer-rights {
   body main .display-card .modal .modal-wrapper .modal-content .close-modal {
     margin: 0 1rem 0 0;
   }
-  body #section-portfolio .portfolio-wrapper .portfolio-img-wrapper {
-    width: 0%;
-    flex-direction: column;
-  }
-  body #section-portfolio .portfolio-wrapper .portfolio-img-wrapper img {
-    display: none;
-  }
-  body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper {
-    width: 100%;
-    margin-right: 0;
-  }
-  body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-sub-wrapper {
-    flex-direction: column;
-  }
-  body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-sub-wrapper .watch-trailer, body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-sub-wrapper .watch-btn {
-    margin-top: 1rem;
-  }
-  body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper h5 {
-    font-size: 10px;
-    margin-top: 1rem;
-  }
-  body #section-portfolio .portfolio-wrapper .modal-portfolio-carousel .modal-portfolio-video-wrapper .carousel-btn-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-  body #section-portfolio .portfolio-wrapper .modal-portfolio-carousel .modal-portfolio-video-wrapper .carousel-btn-container button {
-    padding: 0.2rem 0.6rem !important;
-    margin: 1rem 0.1rem !important;
-    font-size: 0.7rem !important;
-  }
   body #section-showreel {
     width: 80%;
     grid-template-columns: repeat(1, 1fr);
@@ -1544,37 +1499,6 @@ body footer .footer-wrapper #footer-rights {
   body #main .display-card .modal .modal-wrapper .modal-content .close-modal {
     margin: 0 1rem 0 0;
   }
-  body #section-portfolio .portfolio-wrapper .portfolio-img-wrapper {
-    width: 0%;
-    flex-direction: column;
-  }
-  body #section-portfolio .portfolio-wrapper .portfolio-img-wrapper img {
-    display: none;
-  }
-  body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper {
-    width: 100%;
-    margin-right: 0;
-  }
-  body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-sub-wrapper {
-    flex-direction: column;
-  }
-  body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-sub-wrapper .watch-trailer, body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-sub-wrapper .watch-btn {
-    margin-top: 1rem;
-  }
-  body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper h5 {
-    font-size: 10px;
-    margin-top: 1rem;
-  }
-  body #section-portfolio .portfolio-wrapper .modal-portfolio-carousel .modal-portfolio-video-wrapper .carousel-btn-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-  body #section-portfolio .portfolio-wrapper .modal-portfolio-carousel .modal-portfolio-video-wrapper .carousel-btn-container button {
-    padding: 0.2rem 0.6rem !important;
-    margin: 1rem 0.1rem !important;
-    font-size: 0.7rem !important;
-  }
   body #section-showreel {
     width: 90%;
     grid-template-columns: repeat(1, 1fr);
@@ -1622,34 +1546,6 @@ body footer .footer-wrapper #footer-rights {
   body #main .display-card .modal .modal-wrapper {
     width: 80%;
     height: 80%;
-  }
-  body #section-portfolio .portfolio-wrapper .portfolio-img-wrapper {
-    width: 50%;
-  }
-  body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper {
-    width: 100%;
-    margin-right: 0;
-    padding: 1rem 0.5rem;
-  }
-  body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-sub-wrapper {
-    flex-direction: column;
-  }
-  body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-sub-wrapper .watch-trailer, body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-sub-wrapper .watch-btn {
-    margin-top: 1rem;
-  }
-  body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper h5 {
-    font-size: 10px;
-    margin-top: 1rem;
-  }
-  body #section-portfolio .portfolio-wrapper .modal-portfolio-carousel .modal-portfolio-video-wrapper .carousel-btn-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-  body #section-portfolio .portfolio-wrapper .modal-portfolio-carousel .modal-portfolio-video-wrapper .carousel-btn-container button {
-    padding: 0.2rem 0.6rem !important;
-    margin: 1rem 0.1rem !important;
-    font-size: 0.7rem !important;
   }
   body #section-showreel {
     width: 80%;
@@ -1711,32 +1607,6 @@ body footer .footer-wrapper #footer-rights {
   }
   body #main .display-card .modal .modal-wrapper .modal-content .close-modal {
     margin: 0 1rem 0 0;
-  }
-  body #section-portfolio .portfolio-wrapper .portfolio-img-wrapper .img-vertical {
-    height: 20rem;
-  }
-  body #section-portfolio .portfolio-wrapper .portfolio-img-wrapper img {
-    height: 100%;
-    width: 100%;
-    -o-object-fit: scale-down;
-       object-fit: scale-down;
-    padding: 1rem;
-  }
-  body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-sub-wrapper .watch-trailer, body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-sub-wrapper .watch-btn {
-    font-size: 1rem;
-  }
-  body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper h3, body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper h4 {
-    font-size: 1.2rem;
-  }
-  body #section-portfolio .portfolio-wrapper .portfolio-text-wrapper h5 {
-    font-size: 0.9rem;
-  }
-  body #section-portfolio .portfolio-wrapper .modal-portfolio-carousel .modal-portfolio-video-wrapper .carousel-btn-container {
-    display: flex;
-    justify-content: space-around;
-  }
-  body #section-portfolio .portfolio-wrapper .modal-portfolio-carousel .modal-portfolio-video-wrapper .carousel-btn-container button {
-    font-size: 1rem;
   }
   body #section-showreel .showreel-text-wrapper {
     font-size: 1.1rem;
