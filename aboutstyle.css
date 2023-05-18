@@ -265,6 +265,9 @@ h5 {
   font-weight: 900;
   line-height: 0.8;
 }
+#section-about .about-text-wrapper .subtitle-custom {
+  color: #34eaab;
+}
 #section-about .about-text-wrapper .about-text {
   font-size: 1rem;
   margin-top: 1rem;

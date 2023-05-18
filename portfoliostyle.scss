@@ -1,0 +1,199 @@
+#section-portfolio {
+	padding: 12rem 0 4rem 0;
+	display: flex;
+	// display: grid;
+	// grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+	// .column {
+	// 	border: solid 2px red !important;
+		// flex: 1;
+		// width: 200px;
+		// display: flex;
+		// flex-direction: column;
+		// gap: 1rem;
+		// height: 100%;
+		
+		.portfolio-wrapper {
+			min-width: 120px;
+			max-width: 250px;
+		
+		height: 100%;
+		background-color: $primary-color;
+		box-shadow:  10px 10px 20px #171819,
+					 -5px -5px 5px #1f2023;
+
+		.portfolio-img-wrapper {
+				overflow: hidden;
+
+				img {
+						height: 100%; 
+						width: 100%;
+						object-fit: scale-down;
+				}
+		}
+
+		.portfolio-text-wrapper {
+					padding: 1rem;
+					text-transform: uppercase;
+					
+					.portfolio-header-text {
+						line-height: 1;
+
+						.title {
+							font-size: 0.7rem;
+							color: $light-color;
+							h3 {
+								line-height: 1;
+								letter-spacing: -0.5px;
+								margin-bottom: 0.5rem;
+							}
+							i {
+								margin-left: 0.3rem;
+								font-size: 0.6rem;
+							}
+							
+							&:hover {
+								color: #f00064;
+							}
+						}
+						.subtitle {
+							font-size: 0.9rem;
+							text-transform: uppercase;
+							line-height: 1;
+							color: #ffd251;
+							font-weight: 900;
+						}
+					}
+				
+				.portfolio-content-wrapper {
+					// text-transform: uppercase;
+					.portfolio-content-title {
+						font-weight: 300;
+						line-height: 1.1;
+						margin-top: 0.8rem;
+						font-size: 0.7rem;
+						// letter-spacing: 1px;
+					}
+
+					.portfolio-content-subtitle, .subtitle-link {
+						color: #34eaab;
+						line-height: 1.5;
+						font-size: 0.8rem;
+						font-weight: 300;
+						// letter-spacing: 0.8px;
+
+						.subtitle-link{
+							i {
+								margin-left: 0.3rem;
+								font-size: 0.6rem;
+							}
+							&:hover {
+								color: #f00064;
+							}
+						}
+					} 
+				}
+		}
+
+			//portfolio modal
+			.modal-portfolio-carousel {
+					display: none;
+					position: fixed;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					width: 100vw;
+					height: 100vh;
+					z-index: 10;
+					background-color: rgba($color: #292828, $alpha: 0.8);
+					background: url('/img/main-bg.png');
+					background-size: contain;
+					animation-name:modalopen;
+					animation-duration: 1.5s;
+
+					.modal-portfolio-wrapper{
+							display: flex;
+							flex-direction: column;
+
+							.close-portfolio-carousel{
+									text-align: right;
+									padding: 2rem;
+									margin: 1rem;
+									font-size: 1.5rem;
+									cursor: pointer;
+									color: $light-color;
+	
+									&:hover {color: $secondary-color;} 
+									&:active {color: $dark-color;}
+								}
+
+								.modal-portfolio-video-wrapper {
+									width: 70%;
+									height: 40%;
+									margin: 1rem auto;
+									display: flex;
+									flex-direction: column;
+									align-items: center;
+	
+									.carousel-img-wrapper {
+										position: relative;
+										top:0;
+										left: 0;
+										width: 100%;
+										height: auto;
+										margin: auto;
+		
+										.iframe-wrapper {
+											position: relative;
+											padding-bottom: 56.25%;
+											overflow: hidden;
+											display: flex;
+												
+											.show {display: block;}
+											.hide {display: none;}
+		
+											iframe {
+													position: absolute;
+													overflow: hidden;
+													width: 100%;
+													height: 100%;
+													top: 0;
+													bottom: 0;
+													left: 0;
+													right: 0;
+											}
+										}
+									}
+									.carousel-btn-container {
+	
+											button {
+													cursor: pointer;
+													border: none;
+													background-color: $green;
+													color: $primary-color;
+													padding: 0.3rem 0.5rem;
+													margin-top: 2rem;
+													font-weight: 900;
+													font-size: 1.2rem;
+													letter-spacing: -1px;
+													
+													&:hover {
+														background-color: $secondary-color;
+													}
+											}
+									} 
+							}
+					}
+			}
+			// .test {display: block;}
+	} 
+// }
+	@keyframes modalopen {
+			from {opacity: 0}
+			to {opacity: 1}
+		}
+}

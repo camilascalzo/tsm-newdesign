@@ -220,7 +220,7 @@ main #main-container {
   margin-top: 15rem;
   display: grid;
   gap: 0.5rem;
-  grid-template-areas: "img-14 img-1 img-2 img-3" "img-4 img-5 img-6 img-7" "img-13 img-10 img-10 img-10" "img-9 img-9 img-9 img-8" "img-11 img-11 img-12 img-12";
+  grid-template-areas: "img-25 img-24 img-23 img-22" "img-21 img-20 img-19 img-18" "img-17 img-16 img-15 img-14" "img-13 img-2 img-3 img-4" "img-5 img-6 img-7 img-1";
 }
 main #main-container #img-1 {
   grid-area: img-1;
@@ -243,26 +243,44 @@ main #main-container #img-6 {
 main #main-container #img-7 {
   grid-area: img-7;
 }
-main #main-container #img-8 {
-  grid-area: img-8;
-}
-main #main-container #img-9 {
-  grid-area: img-9;
-}
-main #main-container #img-10 {
-  grid-area: img-10;
-}
-main #main-container #img-11 {
-  grid-area: img-11;
-}
-main #main-container #img-12 {
-  grid-area: img-12;
-}
 main #main-container #img-13 {
   grid-area: img-13;
 }
 main #main-container #img-14 {
   grid-area: img-14;
+}
+main #main-container #img-15 {
+  grid-area: img-15;
+}
+main #main-container #img-16 {
+  grid-area: img-16;
+}
+main #main-container #img-17 {
+  grid-area: img-17;
+}
+main #main-container #img-18 {
+  grid-area: img-18;
+}
+main #main-container #img-19 {
+  grid-area: img-19;
+}
+main #main-container #img-20 {
+  grid-area: img-20;
+}
+main #main-container #img-21 {
+  grid-area: img-21;
+}
+main #main-container #img-22 {
+  grid-area: img-22;
+}
+main #main-container #img-23 {
+  grid-area: img-23;
+}
+main #main-container #img-24 {
+  grid-area: img-24;
+}
+main #main-container #img-25 {
+  grid-area: img-25;
 }
 main #main-container .display-card {
   display: flex;
@@ -287,21 +305,6 @@ main #main-container .display-card .img-wrapper img {
 main #main-container .display-card .img-wrapper img:hover {
   transform: scale(1.2);
   transition: all 3s ease;
-}
-main #main-container .display-card .video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  overflow: hidden;
-  height: 100%;
-}
-main #main-container .display-card .video-wrapper iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 main #main-container .display-card .modal {
   display: none;
@@ -399,6 +402,68 @@ main #main-container .display-card .modal .modal-content .trailer-container a:ho
   color: #1b1c1e;
   transition: all 0.3s;
 }
-main #main-container .display-card .test {
-  display: flex;
+
+@media only screen and (max-width: 767px) {
+  main #main-container {
+    margin-top: 10rem;
+    grid-template-areas: "img-25" "img-24" "img-23" "img-22" "img-21" "img-20" "img-19" "img-18" "img-17" "img-16" "img-15" "img-14" "img-13" "img-7" "img-6" "img-5" "img-4" "img-3" "img-2" "img-1";
+  }
+  main #main-container .display-card .modal .modal-content {
+    letter-spacing: -2px;
+  }
+  main #main-container .display-card .modal .modal-content .modal-header .modal-header-title {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    line-height: 0.9;
+  }
+  main #main-container .display-card .modal .modal-content .modal-header .modal-header-subtitle {
+    font-size: 1.5rem;
+    margin-top: -0.5rem;
+  }
+  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-title {
+    font-size: 1rem;
+  }
+  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle {
+    font-size: 1.1rem;
+    margin-top: -0.5rem;
+  }
+  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-award {
+    color: #462ad6;
+    font-size: 1.1rem;
+    letter-spacing: 0;
+    font-weight: 900;
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  main #main-container {
+    margin-top: 10rem;
+    grid-template-areas: "img-25 img-24" "img-23 img-22" "img-21 img-20" "img-19 img-18" "img-17 img-16" "img-15 img-14" "img-13 img-7" "img-6 img-5" "img-4 img-3" "img-2 img-1";
+  }
+  main #main-container .display-card .modal .modal-content {
+    letter-spacing: -2px;
+  }
+  main #main-container .display-card .modal .modal-content .modal-header .modal-header-title {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    line-height: 0.9;
+  }
+  main #main-container .display-card .modal .modal-content .modal-header .modal-header-subtitle {
+    font-size: 1.5rem;
+    margin-top: -0.5rem;
+  }
+  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-title {
+    font-size: 1rem;
+  }
+  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle {
+    font-size: 1.1rem;
+    margin-top: -0.5rem;
+  }
+  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-award {
+    color: #462ad6;
+    font-size: 1.1rem;
+    letter-spacing: 0;
+    font-weight: 900;
+    display: block;
+  }
 }/*# sourceMappingURL=indexstyle.css.map */

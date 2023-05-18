@@ -50,6 +50,9 @@
 				font-weight: 900;
 				line-height: 0.8;
 			}
+			.subtitle-custom {
+				color: $green;
+			}
 			.about-text {
 				font-size: clamp(0.8rem, 1rem, 1.5rem);
 				margin-top: 1rem;
