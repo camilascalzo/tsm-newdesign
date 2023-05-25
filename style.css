@@ -436,10 +436,10 @@ h5 {
 }
 
 main #main-container {
-  margin-top: 15rem;
+  padding-top: 10rem;
   display: grid;
   gap: 0.5rem;
-  grid-template-areas: "img-25 img-24 img-23 img-22" "img-21 img-20 img-19 img-18" "img-17 img-16 img-15 img-14" "img-13 img-2 img-3 img-4" "img-5 img-6 img-7 img-1";
+  grid-template-areas: "img-24 img-23 img-22 img-21" "img-20 img-19 img-18 img-16" "img-15 img-14 img-13 img-2 " "img-3 img-4 img-5 img-6";
 }
 main #main-container #img-1 {
   grid-area: img-1;
@@ -622,81 +622,16 @@ main #main-container .display-card .modal .modal-content .trailer-container a:ho
   transition: all 0.3s;
 }
 
-@media only screen and (max-width: 767px) {
-  main #main-container {
-    margin-top: 10rem;
-    grid-template-areas: "img-25" "img-24" "img-23" "img-22" "img-21" "img-20" "img-19" "img-18" "img-17" "img-16" "img-15" "img-14" "img-13" "img-7" "img-6" "img-5" "img-4" "img-3" "img-2" "img-1";
-  }
-  main #main-container .display-card .modal .modal-content {
-    letter-spacing: -2px;
-  }
-  main #main-container .display-card .modal .modal-content .modal-header .modal-header-title {
-    font-size: 1.2rem;
-    letter-spacing: 0;
-    line-height: 0.9;
-  }
-  main #main-container .display-card .modal .modal-content .modal-header .modal-header-subtitle {
-    font-size: 1.5rem;
-    margin-top: -0.5rem;
-  }
-  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-title {
-    font-size: 1rem;
-  }
-  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle {
-    font-size: 1.1rem;
-    margin-top: -0.5rem;
-  }
-  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-award {
-    color: #462ad6;
-    font-size: 1.1rem;
-    letter-spacing: 0;
-    font-weight: 900;
-    display: block;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  main #main-container {
-    margin-top: 10rem;
-    grid-template-areas: "img-25 img-24" "img-23 img-22" "img-21 img-20" "img-19 img-18" "img-17 img-16" "img-15 img-14" "img-13 img-7" "img-6 img-5" "img-4 img-3" "img-2 img-1";
-  }
-  main #main-container .display-card .modal .modal-content {
-    letter-spacing: -2px;
-  }
-  main #main-container .display-card .modal .modal-content .modal-header .modal-header-title {
-    font-size: 1.2rem;
-    letter-spacing: 0;
-    line-height: 0.9;
-  }
-  main #main-container .display-card .modal .modal-content .modal-header .modal-header-subtitle {
-    font-size: 1.5rem;
-    margin-top: -0.5rem;
-  }
-  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-title {
-    font-size: 1rem;
-  }
-  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle {
-    font-size: 1.1rem;
-    margin-top: -0.5rem;
-  }
-  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-award {
-    color: #462ad6;
-    font-size: 1.1rem;
-    letter-spacing: 0;
-    font-weight: 900;
-    display: block;
-  }
-}
 #section-portfolio {
   padding: 12rem 0 4rem 0;
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
+}
+#section-portfolio .grid-col {
+  flex: 1;
 }
 #section-portfolio .portfolio-wrapper {
-  min-width: 120px;
-  max-width: 250px;
-  height: 100%;
+  margin-top: 1rem;
   background-color: #1b1c1e;
   box-shadow: 10px 10px 20px #171819, -5px -5px 5px #1f2023;
 }
@@ -706,8 +641,8 @@ main #main-container .display-card .modal .modal-content .trailer-container a:ho
 #section-portfolio .portfolio-wrapper .portfolio-img-wrapper img {
   height: 100%;
   width: 100%;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #section-portfolio .portfolio-wrapper .portfolio-text-wrapper {
   padding: 1rem;
@@ -1169,24 +1104,6 @@ h5 {
   padding: 0 2rem;
   font-size: 1rem;
 }
-#section-about .about-text-wrapper .title {
-  margin-top: 0.5rem;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  font-weight: 700;
-}
-#section-about .about-text-wrapper .subtitle {
-  color: #ffd251;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  font-weight: 900;
-  line-height: 0.8;
-}
-#section-about .about-text-wrapper .subtitle-custom {
-  color: #34eaab;
-}
 #section-about .about-text-wrapper .about-text {
   font-size: 1rem;
   margin-top: 1rem;
@@ -1237,8 +1154,19 @@ body header .navbar-wrapper {
   align-items: center;
   padding: 1rem 0;
 }
-body header img {
-  width: 70px;
+body header #hero-text-wrap {
+  letter-spacing: -0.5px;
+}
+body header #hero-text-wrap h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+body header #hero-text-wrap h2 {
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1;
+  color: #34eaab;
 }
 body header nav {
   display: flex;
@@ -1394,6 +1322,9 @@ body footer .footer-wrapper #footer-contact a:hover, body footer .footer-wrapper
 body footer .footer-wrapper #footer-rights {
   font-size: 0.7rem;
   letter-spacing: 1px;
+}
+body footer .footer-wrapper #footer-rights img {
+  width: 70px;
 }
 @keyframes carousel {
   from {

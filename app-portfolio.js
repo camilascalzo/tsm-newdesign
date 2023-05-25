@@ -1,5 +1,10 @@
-//MODAL
+// MASONRY
+var colc = new Colcade( '.grid', {
+  columns: '.grid-col',
+  items: '.grid-item'
+});
 
+//MODAL
 const openCarouselBtn = document.querySelectorAll(".watch-btn");
 const openCarouselBtnArr = Array.from(openCarouselBtn).entries();
 const closeModalBtn = document.querySelectorAll(".close-portfolio-carousel");
@@ -64,4 +69,5 @@ function changeSlideNext(e) {
 	currentSlide = nextSlide
 	e.preventDefault();
 }
+
 

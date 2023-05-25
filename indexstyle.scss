@@ -2,16 +2,19 @@
 
 main {
 	#main-container {
-
-		margin-top: 15rem;
+		padding-top: 10rem;
 		display: grid;
 		gap: 0.5rem;
 		grid-template-areas: 
-			"img-25 img-24 img-23 img-22"
-			"img-21 img-20 img-19 img-18"
-			"img-17 img-16 img-15 img-14"
-			"img-13 img-2 img-3 img-4"
-			"img-5 img-6 img-7 img-1"
+			// "img-25 img-24 img-23 img-22"
+			// "img-21 img-20 img-19 img-18"
+			// "img-17 img-16 img-15 img-14"
+			// "img-13 img-2 img-3 img-4"
+			// "img-5 img-6 img-7 img-1"
+			"img-24 img-23 img-22 img-21"
+			"img-20 img-19 img-18 img-16"
+			"img-15 img-14 img-13 img-2 "
+			"img-3 img-4 img-5 img-6"
 			;
 		#img-1 {grid-area: img-1;}
 		#img-2 {grid-area: img-2;}
@@ -95,22 +98,21 @@ main {
 					}
 	
 					.modal-header {
-						
-							.modal-header-title {
-								font-size: clamp(1rem, 2rem, 2.5rem);
-								color: $yellow;
-								font-weight: 900;
-							}
+						.modal-header-title {
+							font-size: clamp(1rem, 2rem, 2.5rem);
+							color: $yellow;
+							font-weight: 900;
+						}
 		
-							.modal-header-subtitle {
-								font-size: clamp(1.5rem, 2.5rem, 3rem);
-								font-weight: 900;
-								margin-top: -1.5rem;
-								color: $primary-color;
-							}
+						.modal-header-subtitle {
+							font-size: clamp(1.5rem, 2.5rem, 3rem);
+							font-weight: 900;
+							margin-top: -1.5rem;
+							color: $primary-color;
+						}
 					}
+					
 					.modal-info-container {
-	
 						.modal-info-title {
 							font-size: clamp(1rem, 1.3rem, 2rem);
 							letter-spacing: 0;
@@ -148,9 +150,11 @@ main {
 							display: block;
 						}
 					}
-					.trailer-container{
+
+					.trailer-container {
 						display: flex;
 						margin-top: 1.5rem;
+
 						a {
 							text-transform: lowercase;
 							font-weight: 700;
@@ -168,134 +172,133 @@ main {
 						}
 					}
 				}
-	
 			}
 		}
 	}
 }
 
-@media only screen and (max-width:767px) {
-	main {
-		#main-container {
-			margin-top: 10rem;
-			grid-template-areas: 
-					"img-25"    
-					"img-24"
-					"img-23"
-					"img-22"
-					"img-21"
-					"img-20"
-					"img-19"
-					"img-18"
-					"img-17"
-					"img-16"
-					"img-15"
-					"img-14"
-					"img-13"
-					"img-7"  
-					"img-6"  
-					"img-5"  
-					"img-4"  
-					"img-3"  
-					"img-2"  
-					"img-1";  
+// @media only screen and (max-width:767px) {
+// 	main {
+// 		#main-container {
+// 			margin-top: 10rem;
+// 			grid-template-areas: 
+// 					"img-25"    
+// 					"img-24"
+// 					"img-23"
+// 					"img-22"
+// 					"img-21"
+// 					"img-20"
+// 					"img-19"
+// 					"img-18"
+// 					"img-17"
+// 					"img-16"
+// 					"img-15"
+// 					"img-14"
+// 					"img-13"
+// 					"img-7"  
+// 					"img-6"  
+// 					"img-5"  
+// 					"img-4"  
+// 					"img-3"  
+// 					"img-2"  
+// 					"img-1";  
 
-			.display-card {
-				.modal {		
-					.modal-content {
-						letter-spacing: -2px;
+// 			.display-card {
+// 				.modal {		
+// 					.modal-content {
+// 						letter-spacing: -2px;
 		
-						.modal-header {
-								.modal-header-title {
-									font-size: 1.2rem;
-									letter-spacing: 0;
-									line-height: 0.9;
-								}
+// 						.modal-header {
+// 								.modal-header-title {
+// 									font-size: 1.2rem;
+// 									letter-spacing: 0;
+// 									line-height: 0.9;
+// 								}
 			
-								.modal-header-subtitle {
-									font-size: 1.5rem;
-									margin-top: -0.5rem;
-								}
-						}
-						.modal-info-container {
+// 								.modal-header-subtitle {
+// 									font-size: 1.5rem;
+// 									margin-top: -0.5rem;
+// 								}
+// 						}
+// 						.modal-info-container {
 		
-							.modal-info-title {
-								font-size: 1rem;
-							}
+// 							.modal-info-title {
+// 								font-size: 1rem;
+// 							}
 		
-							.modal-info-subtitle {
-								font-size: 1.1rem;
-								margin-top: -0.5rem;
-							}
-							.modal-info-award {
-								color: $blue;
-								font-size: clamp(1rem, 1.1rem, 2rem);
-								letter-spacing: 0;
-								font-weight: 900;
-								display: block;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
+// 							.modal-info-subtitle {
+// 								font-size: 1.1rem;
+// 								margin-top: -0.5rem;
+// 							}
+// 							.modal-info-award {
+// 								color: $blue;
+// 								font-size: clamp(1rem, 1.1rem, 2rem);
+// 								letter-spacing: 0;
+// 								font-weight: 900;
+// 								display: block;
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-	main {
-		#main-container {
-			margin-top: 10rem;
-			grid-template-areas: 
-					"img-25 img-24"
-					"img-23 img-22"
-					"img-21 img-20"
-					"img-19 img-18"
-					"img-17 img-16"
-					"img-15 img-14"
-					"img-13 img-7"  
-					"img-6 img-5"  
-					"img-4 img-3"  
-					"img-2 img-1";  
+// @media only screen and (min-width: 768px) and (max-width: 1199px) {
+// 	main {
+// 		#main-container {
+// 			margin-top: 10rem;
+// 			grid-template-areas: 
+// 					"img-25 img-24"
+// 					"img-23 img-22"
+// 					"img-21 img-20"
+// 					"img-19 img-18"
+// 					"img-17 img-16"
+// 					"img-15 img-14"
+// 					"img-13 img-7"  
+// 					"img-6 img-5"  
+// 					"img-4 img-3"  
+// 					"img-2 img-1";  
 
-			.display-card {
-				.modal {		
-					.modal-content {
-						letter-spacing: -2px;
+// 			.display-card {
+// 				.modal {		
+// 					.modal-content {
+// 						letter-spacing: -2px;
 		
-						.modal-header {
-								.modal-header-title {
-									font-size: 1.2rem;
-									letter-spacing: 0;
-									line-height: 0.9;
-								}
+// 						.modal-header {
+// 								.modal-header-title {
+// 									font-size: 1.2rem;
+// 									letter-spacing: 0;
+// 									line-height: 0.9;
+// 								}
 			
-								.modal-header-subtitle {
-									font-size: 1.5rem;
-									margin-top: -0.5rem;
-								}
-						}
-						.modal-info-container {
+// 								.modal-header-subtitle {
+// 									font-size: 1.5rem;
+// 									margin-top: -0.5rem;
+// 								}
+// 						}
+// 						.modal-info-container {
 		
-							.modal-info-title {
-								font-size: 1rem;
-							}
+// 							.modal-info-title {
+// 								font-size: 1rem;
+// 							}
 		
-							.modal-info-subtitle {
-								font-size: 1.1rem;
-								margin-top: -0.5rem;
-							}
-							.modal-info-award {
-								color: $blue;
-								font-size: clamp(1rem, 1.1rem, 2rem);
-								letter-spacing: 0;
-								font-weight: 900;
-								display: block;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
+// 							.modal-info-subtitle {
+// 								font-size: 1.1rem;
+// 								margin-top: -0.5rem;
+// 							}
+// 							.modal-info-award {
+// 								color: $blue;
+// 								font-size: clamp(1rem, 1.1rem, 2rem);
+// 								letter-spacing: 0;
+// 								font-weight: 900;
+// 								display: block;
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }

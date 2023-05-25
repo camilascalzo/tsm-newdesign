@@ -217,10 +217,10 @@ h5 {
 }
 
 main #main-container {
-  margin-top: 15rem;
+  padding-top: 10rem;
   display: grid;
   gap: 0.5rem;
-  grid-template-areas: "img-25 img-24 img-23 img-22" "img-21 img-20 img-19 img-18" "img-17 img-16 img-15 img-14" "img-13 img-2 img-3 img-4" "img-5 img-6 img-7 img-1";
+  grid-template-areas: "img-24 img-23 img-22 img-21" "img-20 img-19 img-18 img-16" "img-15 img-14 img-13 img-2 " "img-3 img-4 img-5 img-6";
 }
 main #main-container #img-1 {
   grid-area: img-1;
@@ -401,69 +401,4 @@ main #main-container .display-card .modal .modal-content .trailer-container a:ho
   background-color: #34eaab;
   color: #1b1c1e;
   transition: all 0.3s;
-}
-
-@media only screen and (max-width: 767px) {
-  main #main-container {
-    margin-top: 10rem;
-    grid-template-areas: "img-25" "img-24" "img-23" "img-22" "img-21" "img-20" "img-19" "img-18" "img-17" "img-16" "img-15" "img-14" "img-13" "img-7" "img-6" "img-5" "img-4" "img-3" "img-2" "img-1";
-  }
-  main #main-container .display-card .modal .modal-content {
-    letter-spacing: -2px;
-  }
-  main #main-container .display-card .modal .modal-content .modal-header .modal-header-title {
-    font-size: 1.2rem;
-    letter-spacing: 0;
-    line-height: 0.9;
-  }
-  main #main-container .display-card .modal .modal-content .modal-header .modal-header-subtitle {
-    font-size: 1.5rem;
-    margin-top: -0.5rem;
-  }
-  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-title {
-    font-size: 1rem;
-  }
-  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle {
-    font-size: 1.1rem;
-    margin-top: -0.5rem;
-  }
-  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-award {
-    color: #462ad6;
-    font-size: 1.1rem;
-    letter-spacing: 0;
-    font-weight: 900;
-    display: block;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  main #main-container {
-    margin-top: 10rem;
-    grid-template-areas: "img-25 img-24" "img-23 img-22" "img-21 img-20" "img-19 img-18" "img-17 img-16" "img-15 img-14" "img-13 img-7" "img-6 img-5" "img-4 img-3" "img-2 img-1";
-  }
-  main #main-container .display-card .modal .modal-content {
-    letter-spacing: -2px;
-  }
-  main #main-container .display-card .modal .modal-content .modal-header .modal-header-title {
-    font-size: 1.2rem;
-    letter-spacing: 0;
-    line-height: 0.9;
-  }
-  main #main-container .display-card .modal .modal-content .modal-header .modal-header-subtitle {
-    font-size: 1.5rem;
-    margin-top: -0.5rem;
-  }
-  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-title {
-    font-size: 1rem;
-  }
-  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle {
-    font-size: 1.1rem;
-    margin-top: -0.5rem;
-  }
-  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-award {
-    color: #462ad6;
-    font-size: 1.1rem;
-    letter-spacing: 0;
-    font-weight: 900;
-    display: block;
-  }
 }/*# sourceMappingURL=indexstyle.css.map */

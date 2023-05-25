@@ -250,24 +250,6 @@ h5 {
   padding: 0 2rem;
   font-size: 1rem;
 }
-#section-about .about-text-wrapper .title {
-  margin-top: 0.5rem;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  font-weight: 700;
-}
-#section-about .about-text-wrapper .subtitle {
-  color: #ffd251;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  font-weight: 900;
-  line-height: 0.8;
-}
-#section-about .about-text-wrapper .subtitle-custom {
-  color: #34eaab;
-}
 #section-about .about-text-wrapper .about-text {
   font-size: 1rem;
   margin-top: 1rem;
