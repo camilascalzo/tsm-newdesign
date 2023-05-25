@@ -675,16 +675,16 @@ main #main-container .display-card .modal .modal-content .trailer-container a:ho
   font-weight: 900;
 }
 #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper .portfolio-content-title {
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.1;
   margin-top: 0.8rem;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper .portfolio-content-subtitle, #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper .subtitle-link {
   color: #34eaab;
   line-height: 1.5;
   font-size: 0.8rem;
-  font-weight: 300;
+  font-weight: 700;
 }
 #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper .portfolio-content-subtitle .subtitle-link i, #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper .subtitle-link .subtitle-link i {
   margin-left: 0.3rem;
