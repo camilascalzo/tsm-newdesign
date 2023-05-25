@@ -9,9 +9,9 @@
 			padding-bottom: 56.25%;
 			
 			iframe {
-					position: absolute;
-					width: 100%;
-					height: 100%;
+				position: absolute;
+				width: 100%;
+				height: 100%;
 			}
 	}
 
@@ -20,35 +20,35 @@
 			flex-direction: column;
 			padding: 0 1rem;
 			font-size: 1rem;
-			.title {
-				// margin-top: 0.5rem;
-				font-size: 1.5rem;
-				text-transform: uppercase;
-				letter-spacing: -1px;
-				font-weight: 700;
-			}
-			.p-custom {
-				font-size: 1.5rem;
-				text-transform: uppercase;
-				letter-spacing: -1px;
-				font-weight: 700;
-				color: $green;
-				margin: 0;
-			}
+			// .title {
+			// 	// margin-top: 0.5rem;
+			// 	font-size: 1.5rem;
+			// 	text-transform: uppercase;
+			// 	letter-spacing: -1px;
+			// 	font-weight: 700;
+			// }
+			// .p-custom {
+			// 	font-size: 1.5rem;
+			// 	text-transform: uppercase;
+			// 	letter-spacing: -1px;
+			// 	font-weight: 700;
+			// 	color: $green;
+			// 	margin: 0;
+			// }
 
-			.subtitle {
-				color: $secondary-color;
-				font-size: 2.5rem;
-				text-transform: uppercase;
-				letter-spacing: -1px;
-				font-weight: 900;
-				line-height: 0.8;
-			}
+			// .subtitle {
+			// 	color: $secondary-color;
+			// 	font-size: 2.5rem;
+			// 	text-transform: uppercase;
+			// 	letter-spacing: -1px;
+			// 	font-weight: 900;
+			// 	line-height: 0.8;
+			// }
 			
 			p {
-				line-height: 1.6;
+				// line-height: 1.6;
 				font-weight: 300;
-				margin-top: 1.5rem;
+				// margin-top: 1.5rem;
 				span {
 				a {
 					color: $primary-color;
@@ -69,7 +69,7 @@
 				color: #34eaab;
 				font-weight: 900;
 				text-transform:none;
-				letter-spacing: -1px;
+				letter-spacing: -0.5px;
 				font-size: 1.2rem;
 			}
 		}

@@ -808,32 +808,8 @@ main #main-container .display-card .modal .modal-content .trailer-container a:ho
   padding: 0 1rem;
   font-size: 1rem;
 }
-#section-showreel .showreel-text-wrapper .title {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  font-weight: 700;
-}
-#section-showreel .showreel-text-wrapper .p-custom {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  font-weight: 700;
-  color: #34eaab;
-  margin: 0;
-}
-#section-showreel .showreel-text-wrapper .subtitle {
-  color: #ffd251;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  font-weight: 900;
-  line-height: 0.8;
-}
 #section-showreel .showreel-text-wrapper p {
-  line-height: 1.6;
   font-weight: 300;
-  margin-top: 1.5rem;
 }
 #section-showreel .showreel-text-wrapper p span a {
   color: #1b1c1e;
@@ -849,7 +825,7 @@ main #main-container .display-card .modal .modal-content .trailer-container a:ho
   color: #34eaab;
   font-weight: 900;
   text-transform: none;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
   font-size: 1.2rem;
 }
 
