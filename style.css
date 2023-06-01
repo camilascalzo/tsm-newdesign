@@ -439,7 +439,7 @@ main #main-container {
   padding-top: 10rem;
   display: grid;
   gap: 0.5rem;
-  grid-template-areas: "img-24 img-23 img-22 img-21" "img-20 img-19 img-18 img-16" "img-15 img-14 img-13 img-2 " "img-3 img-4 img-5 img-6";
+  grid-template-areas: "img-24 img-23 img-22 img-21" "img-20 img-19 img-18 img-16" "img-15 img-14 img-1 img-2 " "img-3 img-4 img-5 img-6";
 }
 main #main-container #img-1 {
   grid-area: img-1;
@@ -461,9 +461,11 @@ main #main-container #img-6 {
 }
 main #main-container #img-7 {
   grid-area: img-7;
+  display: none;
 }
 main #main-container #img-13 {
   grid-area: img-13;
+  display: none;
 }
 main #main-container #img-14 {
   grid-area: img-14;
@@ -622,6 +624,74 @@ main #main-container .display-card .modal .modal-content .trailer-container a:ho
   transition: all 0.3s;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  main #main-container {
+    grid-template-areas: "img-24 img-23 img-22" "img-21 img-20 img-19" "img-18 img-16 img-15" "img-14 img-1 img-2" "img-3 img-4 img-5" "img-6 img-7 img-13";
+  }
+  main #main-container #img-7 {
+    display: block;
+  }
+  main #main-container #img-13 {
+    display: block;
+  }
+  main #main-container .display-card .modal .modal-content {
+    letter-spacing: -2px;
+  }
+  main #main-container .display-card .modal .modal-content .modal-header .modal-header-title {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    line-height: 0.9;
+  }
+  main #main-container .display-card .modal .modal-content .modal-header .modal-header-subtitle {
+    font-size: 1.5rem;
+    margin-top: -0.5rem;
+  }
+  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-title {
+    font-size: 1rem;
+  }
+  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle {
+    font-size: 1.1rem;
+    margin-top: -0.5rem;
+  }
+  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-award {
+    color: #462ad6;
+    font-size: 1.1rem;
+    letter-spacing: 0;
+    font-weight: 900;
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) {
+  main #main-container {
+    grid-template-areas: "img-24 img-23" "img-22 img-21" "img-20 img-19" "img-18 img-16" "img-15 img-14" "img-1 img-2" "img-3 img-4" "img-5 img-6";
+  }
+  main #main-container .display-card .modal .modal-content {
+    letter-spacing: -2px;
+  }
+  main #main-container .display-card .modal .modal-content .modal-header .modal-header-title {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    line-height: 0.9;
+  }
+  main #main-container .display-card .modal .modal-content .modal-header .modal-header-subtitle {
+    font-size: 1.5rem;
+    margin-top: -0.5rem;
+  }
+  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-title {
+    font-size: 1rem;
+  }
+  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle {
+    font-size: 1.1rem;
+    margin-top: -0.5rem;
+  }
+  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-award {
+    color: #462ad6;
+    font-size: 1.1rem;
+    letter-spacing: 0;
+    font-weight: 900;
+    display: block;
+  }
+}
 #section-portfolio {
   padding: 12rem 0 4rem 0;
   display: flex;
@@ -1318,7 +1388,7 @@ body footer .footer-wrapper #footer-rights img {
     opacity: 1;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
   body header .navbar-wrapper .nav-links {
     flex-direction: column;
     align-items: flex-end;
@@ -1342,6 +1412,30 @@ body footer .footer-wrapper #footer-rights img {
   body header .navbar-wrapper .burguer {
     display: block;
   }
+  body header #hero-text-wrap {
+    letter-spacing: 0;
+  }
+  body header #hero-text-wrap h1 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  body header #hero-text-wrap h2 {
+    font-weight: 700;
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  body header #hero-text-wrap {
+    letter-spacing: 0;
+  }
+  body header #hero-text-wrap h1 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  body header #hero-text-wrap h2 {
+    font-weight: 700;
+    font-size: 0.7rem;
+  }
   body footer .footer-wrapper {
     flex-direction: column;
   }
@@ -1352,57 +1446,29 @@ body footer .footer-wrapper #footer-rights img {
     padding: 1rem 0.5rem;
   }
 }
-@media only screen and (min-width: 1800px) {
-  body header img {
-    width: 100px;
+@media only screen and (min-width: 2560px) {
+  body header #hero-text-wrap h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
   }
-  body header nav .nav-links li a {
-    font-size: 1.3rem;
+  body header #hero-text-wrap h2 {
+    font-size: 1.8rem;
   }
-  body #main .display-card .caption-wrapper .caption-text .caption-title {
-    font-size: 1.1rem;
-  }
-  body #main .display-card .caption-wrapper .caption-text .caption-subtitle {
-    font-size: 1rem;
-  }
-  body #main .display-card .modal .modal-wrapper {
-    width: 80%;
-    height: 80%;
-  }
-  body #main .display-card .modal .modal-wrapper .modal-content .close-modal {
-    margin: 0 1rem 0 0;
-  }
-  body #section-showreel .showreel-text-wrapper {
-    font-size: 1.1rem;
-  }
-  body #section-about .about-img-wrapper figcaption {
-    font-size: 1rem;
-  }
-  body #section-about .about-text-wrapper {
-    font-size: 1.1rem;
-  }
-  body #contact-form .form-field label {
-    font-size: 1.1rem;
-  }
-  body #contact-form .form-field input {
-    font-size: 1rem;
-  }
-  body #contact-form .form-field textarea {
-    font-size: 1rem;
-  }
-  body #contact-form .form-pi {
-    font-size: 1.1rem;
-  }
-  body #contact-form button {
-    font-size: 1rem;
-  }
-  body #section-send-msg p {
-    font-size: 2rem;
-  }
-  body #section-send-msg a {
+  body header nav .nav-links a {
     font-size: 2rem;
   }
   body footer {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+  }
+  body footer .footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body footer .footer-wrapper #footer-contact a, body footer .footer-wrapper #footer-rights a {
+    font-size: 1.5rem;
+  }
+  body footer .footer-wrapper #footer-rights {
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=style.css.map */

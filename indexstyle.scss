@@ -13,7 +13,7 @@ main {
 			// "img-5 img-6 img-7 img-1"
 			"img-24 img-23 img-22 img-21"
 			"img-20 img-19 img-18 img-16"
-			"img-15 img-14 img-13 img-2 "
+			"img-15 img-14 img-1 img-2 "
 			"img-3 img-4 img-5 img-6"
 			;
 		#img-1 {grid-area: img-1;}
@@ -22,8 +22,8 @@ main {
 		#img-4 {grid-area: img-4;}
 		#img-5 {grid-area: img-5;}
 		#img-6 {grid-area: img-6;}
-		#img-7 {grid-area: img-7;}
-		#img-13 {grid-area: img-13;}
+		#img-7 {grid-area: img-7; display: none;}
+		#img-13 {grid-area: img-13; display: none;}
 		#img-14 {grid-area: img-14;}
 		#img-15 {grid-area: img-15;}
 		#img-16 {grid-area: img-16;}
@@ -245,60 +245,113 @@ main {
 // 	}
 // }
 
-// @media only screen and (min-width: 768px) and (max-width: 1199px) {
-// 	main {
-// 		#main-container {
-// 			margin-top: 10rem;
-// 			grid-template-areas: 
-// 					"img-25 img-24"
-// 					"img-23 img-22"
-// 					"img-21 img-20"
-// 					"img-19 img-18"
-// 					"img-17 img-16"
-// 					"img-15 img-14"
-// 					"img-13 img-7"  
-// 					"img-6 img-5"  
-// 					"img-4 img-3"  
-// 					"img-2 img-1";  
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	main {
+		#main-container {
+			grid-template-areas: 
+			"img-24 img-23 img-22"
+			"img-21 img-20 img-19"
+			"img-18 img-16 img-15"
+			"img-14 img-1 img-2"
+			"img-3 img-4 img-5"
+			"img-6 img-7 img-13"; 
 
-// 			.display-card {
-// 				.modal {		
-// 					.modal-content {
-// 						letter-spacing: -2px;
+			#img-7 {display: block;}
+			#img-13 {display: block;}
+
+			.display-card {
+				.modal {		
+					.modal-content {
+						letter-spacing: -2px;
 		
-// 						.modal-header {
-// 								.modal-header-title {
-// 									font-size: 1.2rem;
-// 									letter-spacing: 0;
-// 									line-height: 0.9;
-// 								}
+						.modal-header {
+								.modal-header-title {
+									font-size: 1.2rem;
+									letter-spacing: 0;
+									line-height: 0.9;
+								}
 			
-// 								.modal-header-subtitle {
-// 									font-size: 1.5rem;
-// 									margin-top: -0.5rem;
-// 								}
-// 						}
-// 						.modal-info-container {
+								.modal-header-subtitle {
+									font-size: 1.5rem;
+									margin-top: -0.5rem;
+								}
+						}
+						.modal-info-container {
 		
-// 							.modal-info-title {
-// 								font-size: 1rem;
-// 							}
+							.modal-info-title {
+								font-size: 1rem;
+							}
 		
-// 							.modal-info-subtitle {
-// 								font-size: 1.1rem;
-// 								margin-top: -0.5rem;
-// 							}
-// 							.modal-info-award {
-// 								color: $blue;
-// 								font-size: clamp(1rem, 1.1rem, 2rem);
-// 								letter-spacing: 0;
-// 								font-weight: 900;
-// 								display: block;
-// 							}
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+							.modal-info-subtitle {
+								font-size: 1.1rem;
+								margin-top: -0.5rem;
+							}
+							.modal-info-award {
+								color: $blue;
+								font-size: clamp(1rem, 1.1rem, 2rem);
+								letter-spacing: 0;
+								font-weight: 900;
+								display: block;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	main {
+		#main-container {
+			grid-template-areas: 
+			"img-24 img-23"
+			"img-22 img-21"
+			"img-20 img-19"
+			"img-18 img-16"
+			"img-15 img-14"
+			"img-1 img-2"
+			"img-3 img-4"
+			"img-5 img-6"; 
+
+			.display-card {
+				.modal {		
+					.modal-content {
+						letter-spacing: -2px;
+		
+						.modal-header {
+								.modal-header-title {
+									font-size: 1.2rem;
+									letter-spacing: 0;
+									line-height: 0.9;
+								}
+			
+								.modal-header-subtitle {
+									font-size: 1.5rem;
+									margin-top: -0.5rem;
+								}
+						}
+						.modal-info-container {
+		
+							.modal-info-title {
+								font-size: 1rem;
+							}
+		
+							.modal-info-subtitle {
+								font-size: 1.1rem;
+								margin-top: -0.5rem;
+							}
+							.modal-info-award {
+								color: $blue;
+								font-size: clamp(1rem, 1.1rem, 2rem);
+								letter-spacing: 0;
+								font-weight: 900;
+								display: block;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
