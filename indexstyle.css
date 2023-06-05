@@ -405,6 +405,7 @@ main #main-container .display-card .modal .modal-content .trailer-container a:ho
   transition: all 0.3s;
 }
 
+/**************** MEDIA QUERIES ****************/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   main #main-container {
     grid-template-areas: "img-24 img-23 img-22" "img-21 img-20 img-19" "img-18 img-16 img-15" "img-14 img-1 img-2" "img-3 img-4 img-5" "img-6 img-7 img-13";
@@ -444,25 +445,21 @@ main #main-container .display-card .modal .modal-content .trailer-container a:ho
 }
 @media only screen and (max-width: 767px) {
   main #main-container {
-    grid-template-areas: "img-24 img-23" "img-22 img-21" "img-20 img-19" "img-18 img-16" "img-15 img-14" "img-1 img-2" "img-3 img-4" "img-5 img-6";
-  }
-  main #main-container .display-card .modal .modal-content {
-    letter-spacing: -2px;
+    grid-template-areas: "img-24" "img-23" "img-22" "img-21" "img-20" "img-19" "img-18" "img-16" "img-15" "img-14" "img-1" "img-2" "img-3" "img-4" "img-5" "img-6";
   }
   main #main-container .display-card .modal .modal-content .modal-header .modal-header-title {
-    font-size: 1.2rem;
     letter-spacing: 0;
     line-height: 0.9;
+    margin-bottom: 0.5rem;
   }
   main #main-container .display-card .modal .modal-content .modal-header .modal-header-subtitle {
-    font-size: 1.5rem;
-    margin-top: -0.5rem;
-  }
-  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-title {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    margin-top: -0.7rem;
+    letter-spacing: 0;
+    margin-bottom: 2rem;
   }
   main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-top: -0.5rem;
   }
   main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-award {
@@ -471,5 +468,62 @@ main #main-container .display-card .modal .modal-content .trailer-container a:ho
     letter-spacing: 0;
     font-weight: 900;
     display: block;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  main #main-container .display-card .modal {
+    display: block !important;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: red;
+    animation-name: modalopen;
+    animation-duration: 1s;
+  }
+  main #main-container .display-card .modal .modal-content {
+    margin: 2rem auto;
+    letter-spacing: -2px;
+  }
+  main #main-container .display-card .modal .modal-content .close-modal-btn {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+  }
+  main #main-container .display-card .modal .modal-content .modal-header .modal-header-title {
+    font-size: 2rem;
+  }
+  main #main-container .display-card .modal .modal-content .modal-header .modal-header-subtitle {
+    font-size: 2.5rem;
+    margin-top: -1.5rem;
+  }
+  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-title {
+    font-size: 1.3rem;
+    letter-spacing: 0;
+    margin-top: 0.8rem;
+  }
+  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: -1rem;
+    line-height: 1.6;
+    letter-spacing: 0;
+  }
+  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle .modal-info-subtitle-link .modal-link-icon {
+    font-size: 1rem;
+    margin-left: 0.8rem;
+  }
+  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-award {
+    font-size: 1.1rem;
+    letter-spacing: 0;
+  }
+  main #main-container .display-card .modal .modal-content .trailer-container {
+    margin-top: 1.5rem;
+  }
+  main #main-container .display-card .modal .modal-content .trailer-container a {
+    font-size: 1.1rem;
+    background-color: #ffa700;
+    letter-spacing: 0;
   }
 }/*# sourceMappingURL=indexstyle.css.map */
