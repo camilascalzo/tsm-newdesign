@@ -2,15 +2,10 @@
 
 main {
 	#main-container {
-		padding-top: 10rem;
+		padding-top: 15rem;
 		display: grid;
 		gap: 0.5rem;
 		grid-template-areas: 
-			// "img-25 img-24 img-23 img-22"
-			// "img-21 img-20 img-19 img-18"
-			// "img-17 img-16 img-15 img-14"
-			// "img-13 img-2 img-3 img-4"
-			// "img-5 img-6 img-7 img-1"
 			"img-24 img-23 img-22 img-21"
 			"img-20 img-19 img-18 img-16"
 			"img-15 img-14 img-1 img-2 "
@@ -98,36 +93,33 @@ main {
 					}
 	
 					.modal-header {
+						line-height: 1;
+						margin-bottom: 3rem;
 						.modal-header-title {
-							font-size: clamp(1rem, 2rem, 2.5rem);
-							color: $yellow;
 							font-weight: 900;
+							font-size: 2rem;
+							color: $yellow;
 						}
 		
 						.modal-header-subtitle {
-							font-size: clamp(1.5rem, 2.5rem, 3rem);
 							font-weight: 900;
-							margin-top: -1.5rem;
+							font-size: 2.5rem;
 							color: $primary-color;
 						}
 					}
 					
 					.modal-info-container {
 						.modal-info-title {
-							font-size: clamp(1rem, 1.3rem, 2rem);
-							letter-spacing: 0;
-							margin-top: 0.8rem;
+							font-size: 1.1rem;
 							color: $yellow;
 							font-weight: 900;
+							margin-top: 0.5rem;
 						}
 	
 						.modal-info-subtitle {
-							font-size: clamp(1.5rem, 1.8rem, 2.5rem);
-							font-weight: 700;
-							margin-top: -1rem;
+							font-size: 1.5rem;
 							color: $primary-color;
-							line-height: 1.6;
-							letter-spacing: 0;
+							line-height: 1;
 	
 							.modal-info-subtitle-link {
 								color: $primary-color;
@@ -143,17 +135,16 @@ main {
 							}
 						}
 						.modal-info-award {
+							margin-top: 0.5rem;
 							color: $blue;
-							font-size: clamp(1rem, 1.1rem, 2rem);
-							letter-spacing: 0;
+							font-size: 1.1rem;
 							font-weight: 900;
-							display: block;
 						}
 					}
 
 					.trailer-container {
 						display: flex;
-						margin-top: 1.5rem;
+						margin-top: 6rem;
 
 						a {
 							text-transform: lowercase;
@@ -179,68 +170,63 @@ main {
 
 /**************** MEDIA QUERIES ****************/ 
 
-	@media only screen and (min-width: 768px) and (max-width: 1023px) {
-		main {
-			#main-container {
-				grid-template-areas: 
-				"img-24 img-23 img-22"
-				"img-21 img-20 img-19"
-				"img-18 img-16 img-15"
-				"img-14 img-1 img-2"
-				"img-3 img-4 img-5"
-				"img-6 img-7 img-13"; 
-/**************** MEDIA QUERIES ****************/ 
-
-	@media only screen and (min-width: 768px) and (max-width: 1023px) {
-		main {
-			#main-container {
-				grid-template-areas: 
-				"img-24 img-23 img-22"
-				"img-21 img-20 img-19"
-				"img-18 img-16 img-15"
-				"img-14 img-1 img-2"
-				"img-3 img-4 img-5"
-				"img-6 img-7 img-13"; 
-
-				#img-7 {display: block;}
-				#img-13 {display: block;}
-				#img-7 {display: block;}
-				#img-13 {display: block;}
-
-				.display-card {
-					.modal {		
-						.modal-content {
-							letter-spacing: -2px;
+@media only screen and (max-width: 769px) {
+	main {
+		#main-container {
+			padding-top: 12rem;
+			grid-template-areas: 
+			"img-24"
+			"img-23"
+			"img-22"
+			"img-21"
+			"img-20"
+			"img-19"
+			"img-18"
+			"img-16"
+			"img-15"
+			"img-14"
+			"img-1"
+			"img-2"
+			"img-3"
+			"img-4"
+			"img-5"
+			"img-6"; 
 			
-							.modal-header {
-									.modal-header-title {
-										font-size: 1.2rem;
-										letter-spacing: 0;
-										line-height: 0.9;
-									}
-				
-									.modal-header-subtitle {
-										font-size: 1.5rem;
-										margin-top: -0.5rem;
-									}
+			.display-card {
+				.modal {		
+					.modal-content {
+						.close-modal-btn {
+							font-size: 3rem;
+						}
+						.modal-header {
+								.modal-header-title {
+									font-size: 3rem;
+								}
+								.modal-header-subtitle {
+									font-size: 3.5rem;
+								}
+						}
+						.modal-info-container {
+							.modal-info-title {
+								font-size: 2.5rem;
 							}
-							.modal-info-container {
-			
-								.modal-info-title {
-									font-size: 1rem;
+		
+							.modal-info-subtitle {
+								font-size: 3rem;
+		
+								.modal-info-subtitle-link {		
+									.modal-link-icon {
+										font-size: 2rem;
+									}
 								}
-			
-								.modal-info-subtitle {
-									font-size: 1.1rem;
-									margin-top: -0.5rem;
-								}
-								.modal-info-award {
-									color: $blue;
-									font-size: clamp(1rem, 1.1rem, 2rem);
-									letter-spacing: 0;
-									font-weight: 900;
-									display: block;
-								}
+							}
+							.modal-info-award {
+								font-size: 2.5rem;
+							}
+						}
+						.trailer-container {
+							a {
+								font-size: 2rem;
 							}
 						}
 					}
@@ -248,282 +234,58 @@ main {
 			}
 		}
 	}
-				.display-card {
-					.modal {		
-						.modal-content {
-							letter-spacing: -2px;
-			
-							.modal-header {
-									.modal-header-title {
-										font-size: 1.2rem;
-										letter-spacing: 0;
-										line-height: 0.9;
-									}
-				
-									.modal-header-subtitle {
-										font-size: 1.5rem;
-										margin-top: -0.5rem;
-									}
+}
+
+@media only screen and (min-width: 2500px) {
+	main {
+		#main-container {
+			.display-card {
+				.modal {
+					.modal-content {
+						.close-modal-btn {
+							margin-top: 2rem;
+							font-size: 4rem;
+						}
+		
+						.modal-header {
+							.modal-header-title {
+								font-size: 6rem;
 							}
-							.modal-info-container {
 			
-								.modal-info-title {
-									font-size: 1rem;
+							.modal-header-subtitle {
+								font-size: 6.5rem;
+								line-height: 1;
+							}
+						}
+						
+						.modal-info-container {
+							.modal-info-title {
+								font-size: 3.5rem;
+							}
+		
+							.modal-info-subtitle {
+								font-size: 4rem;
+		
+								.modal-info-subtitle-link {	
+									.modal-link-icon {
+										font-size: 3rem;
+									}
 								}
-			
-								.modal-info-subtitle {
-									font-size: 1.1rem;
-									margin-top: -0.5rem;
-								}
-								.modal-info-award {
-									color: $blue;
-									font-size: clamp(1rem, 1.1rem, 2rem);
-									letter-spacing: 0;
-									font-weight: 900;
-									display: block;
-								}
+							}
+							.modal-info-award {
+								font-size: 3.5rem;
+							}
+						}
+
+						.trailer-container {
+							a {
+								font-size: 4rem;
+								padding: 2rem 4rem;
 							}
 						}
 					}
 				}
 			}
 		}
-	}
-
-	@media only screen and (max-width: 767px) {
-		main {
-			#main-container {
-				grid-template-areas: 
-				"img-24"
-				"img-23"
-				"img-22"
-				"img-21"
-				"img-20"
-				"img-19"
-				"img-18"
-				"img-16"
-				"img-15"
-				"img-14"
-				"img-1"
-				"img-2"
-				"img-3"
-				"img-4"
-				"img-5"
-				"img-6"; 
-	@media only screen and (max-width: 767px) {
-		main {
-			#main-container {
-				grid-template-areas: 
-				"img-24"
-				"img-23"
-				"img-22"
-				"img-21"
-				"img-20"
-				"img-19"
-				"img-18"
-				"img-16"
-				"img-15"
-				"img-14"
-				"img-1"
-				"img-2"
-				"img-3"
-				"img-4"
-				"img-5"
-				"img-6"; 
-
-				.display-card {
-					.modal {		
-						.modal-content {
-			
-							.modal-header {
-									.modal-header-title {
-										letter-spacing: 0;
-										line-height: 0.9;
-										margin-bottom: 0.5rem;
-									}
-				
-									.modal-header-subtitle {
-										font-size: 1.3rem;
-										margin-top: -0.7rem;
-										letter-spacing: 0;
-										margin-bottom: 2rem;
-									}
-							}
-							.modal-info-container {
-			
-								.modal-info-subtitle {
-									font-size: 1.3rem;
-									margin-top: -0.5rem;
-								}
-								.modal-info-award {
-									color: $blue;
-									font-size: clamp(1rem, 1.1rem, 2rem);
-									letter-spacing: 0;
-									font-weight: 900;
-									display: block;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
-	@media only screen and (min-width: 2560px) {
-		main {
-			#main-container {
-					.display-card {
-						.modal {
-							display: block !important;
-							position: fixed;
-							top: 0;
-							bottom: 0;
-							left: 0;
-							right: 0;
-							z-index: 10;
-							background-color: red;
-							animation-name:modalopen;
-							animation-duration: 1s;
-				
-							.modal-content {
-								margin:2rem auto;
-								letter-spacing: -2px;
-				
-								.close-modal-btn {
-									margin-top: 0.5rem;
-									font-size: 1.5rem;
-								}
-				
-								.modal-header {
-									.modal-header-title {
-										font-size: clamp(1rem, 2rem, 2.5rem);
-									}
-					
-									.modal-header-subtitle {
-										font-size: clamp(1.5rem, 2.5rem, 3rem);
-										margin-top: -1.5rem;
-									}
-								}
-								
-								.modal-info-container {
-									.modal-info-title {
-										font-size: clamp(1rem, 1.3rem, 2rem);
-										letter-spacing: 0;
-										margin-top: 0.8rem;
-									}
-				
-									.modal-info-subtitle {
-										font-size: clamp(1.5rem, 1.8rem, 2.5rem);
-										font-weight: 700;
-										margin-top: -1rem;
-										line-height: 1.6;
-										letter-spacing: 0;
-				
-										.modal-info-subtitle-link {	
-											.modal-link-icon {
-												font-size: 1rem;
-												margin-left: 0.8rem;
-											}
-										}
-									}
-									.modal-info-award {
-										font-size: clamp(1rem, 1.1rem, 2rem);
-										letter-spacing: 0;
-									}
-								}
-	
-								.trailer-container {
-									margin-top: 1.5rem;
-	
-									a {
-										font-size: 1.1rem;
-										background-color: $yellow;
-										letter-spacing: 0;
-									}
-								}
-							}
-						}
-					}
-			}
-		}	
-	}
-
-	@media only screen and (min-width: 2560px) {
-		main {
-			#main-container {
-					.display-card {
-						.modal {
-							display: block !important;
-							position: fixed;
-							top: 0;
-							bottom: 0;
-							left: 0;
-							right: 0;
-							z-index: 10;
-							background-color: red;
-							animation-name:modalopen;
-							animation-duration: 1s;
-				
-							.modal-content {
-								margin:2rem auto;
-								letter-spacing: -2px;
-				
-								.close-modal-btn {
-									margin-top: 0.5rem;
-									font-size: 1.5rem;
-								}
-				
-								.modal-header {
-									.modal-header-title {
-										font-size: clamp(1rem, 2rem, 2.5rem);
-									}
-					
-									.modal-header-subtitle {
-										font-size: clamp(1.5rem, 2.5rem, 3rem);
-										margin-top: -1.5rem;
-									}
-								}
-								
-								.modal-info-container {
-									.modal-info-title {
-										font-size: clamp(1rem, 1.3rem, 2rem);
-										letter-spacing: 0;
-										margin-top: 0.8rem;
-									}
-				
-									.modal-info-subtitle {
-										font-size: clamp(1.5rem, 1.8rem, 2.5rem);
-										font-weight: 700;
-										margin-top: -1rem;
-										line-height: 1.6;
-										letter-spacing: 0;
-				
-										.modal-info-subtitle-link {	
-											.modal-link-icon {
-												font-size: 1rem;
-												margin-left: 0.8rem;
-											}
-										}
-									}
-									.modal-info-award {
-										font-size: clamp(1rem, 1.1rem, 2rem);
-										letter-spacing: 0;
-									}
-								}
-	
-								.trailer-container {
-									margin-top: 1.5rem;
-	
-									a {
-										font-size: 1.1rem;
-										background-color: $yellow;
-										letter-spacing: 0;
-									}
-								}
-							}
-						}
-					}
-			}
-		}	
-	}
+	}	
+}

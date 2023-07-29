@@ -436,7 +436,7 @@ h5 {
 }
 
 main #main-container {
-  padding-top: 10rem;
+  padding-top: 15rem;
   display: grid;
   gap: 0.5rem;
   grid-template-areas: "img-24 img-23 img-22 img-21" "img-20 img-19 img-18 img-16" "img-15 img-14 img-1 img-2 " "img-3 img-4 img-5 img-6";
@@ -550,7 +550,7 @@ main #main-container .display-card .modal .modal-content {
 main #main-container .display-card .modal .modal-content .close-modal-btn {
   margin-top: 0.5rem;
   padding: 0.5rem 1rem;
-  color: #462ad6;
+  color: rgb(43, 117, 186);
   font-size: 1.5rem;
   align-self: flex-end;
   cursor: pointer;
@@ -562,31 +562,30 @@ main #main-container .display-card .modal .modal-content .close-modal-btn:hover 
 main #main-container .display-card .modal .modal-content .close-modal-btn:active {
   color: #292828;
 }
+main #main-container .display-card .modal .modal-content .modal-header {
+  line-height: 1;
+  margin-bottom: 3rem;
+}
 main #main-container .display-card .modal .modal-content .modal-header .modal-header-title {
+  font-weight: 900;
   font-size: 2rem;
   color: #ffa700;
-  font-weight: 900;
 }
 main #main-container .display-card .modal .modal-content .modal-header .modal-header-subtitle {
-  font-size: 2.5rem;
   font-weight: 900;
-  margin-top: -1.5rem;
+  font-size: 2.5rem;
   color: #1b1c1e;
 }
 main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-title {
-  font-size: 1.3rem;
-  letter-spacing: 0;
-  margin-top: 0.8rem;
+  font-size: 1.1rem;
   color: #ffa700;
   font-weight: 900;
+  margin-top: 0.5rem;
 }
 main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-top: -1rem;
+  font-size: 1.5rem;
   color: #1b1c1e;
-  line-height: 1.6;
-  letter-spacing: 0;
+  line-height: 1;
 }
 main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle .modal-info-subtitle-link {
   color: #1b1c1e;
@@ -599,15 +598,14 @@ main #main-container .display-card .modal .modal-content .modal-info-container .
   color: #f00064;
 }
 main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-award {
-  color: #462ad6;
+  margin-top: 0.5rem;
+  color: rgb(43, 117, 186);
   font-size: 1.1rem;
-  letter-spacing: 0;
   font-weight: 900;
-  display: block;
 }
 main #main-container .display-card .modal .modal-content .trailer-container {
   display: flex;
-  margin-top: 1.5rem;
+  margin-top: 6rem;
 }
 main #main-container .display-card .modal .modal-content .trailer-container a {
   text-transform: lowercase;
@@ -625,125 +623,63 @@ main #main-container .display-card .modal .modal-content .trailer-container a:ho
 }
 
 /**************** MEDIA QUERIES ****************/
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (max-width: 769px) {
   main #main-container {
-    grid-template-areas: "img-24 img-23 img-22" "img-21 img-20 img-19" "img-18 img-16 img-15" "img-14 img-1 img-2" "img-3 img-4 img-5" "img-6 img-7 img-13";
-  }
-  main #main-container #img-7 {
-    display: block;
-  }
-  main #main-container #img-13 {
-    display: block;
-  }
-  main #main-container .display-card .modal .modal-content {
-    letter-spacing: -2px;
-  }
-  main #main-container .display-card .modal .modal-content .modal-header .modal-header-title {
-    font-size: 1.2rem;
-    letter-spacing: 0;
-    line-height: 0.9;
-  }
-  main #main-container .display-card .modal .modal-content .modal-header .modal-header-subtitle {
-    font-size: 1.5rem;
-    margin-top: -0.5rem;
-  }
-  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-title {
-    font-size: 1rem;
-  }
-  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle {
-    font-size: 1.1rem;
-    margin-top: -0.5rem;
-  }
-  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-award {
-    color: #462ad6;
-    font-size: 1.1rem;
-    letter-spacing: 0;
-    font-weight: 900;
-    display: block;
-  }
-}
-@media only screen and (max-width: 767px) {
-  main #main-container {
+    padding-top: 12rem;
     grid-template-areas: "img-24" "img-23" "img-22" "img-21" "img-20" "img-19" "img-18" "img-16" "img-15" "img-14" "img-1" "img-2" "img-3" "img-4" "img-5" "img-6";
   }
-  main #main-container .display-card .modal .modal-content .modal-header .modal-header-title {
-    letter-spacing: 0;
-    line-height: 0.9;
-    margin-bottom: 0.5rem;
-  }
-  main #main-container .display-card .modal .modal-content .modal-header .modal-header-subtitle {
-    font-size: 1.3rem;
-    margin-top: -0.7rem;
-    letter-spacing: 0;
-    margin-bottom: 2rem;
-  }
-  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle {
-    font-size: 1.3rem;
-    margin-top: -0.5rem;
-  }
-  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-award {
-    color: #462ad6;
-    font-size: 1.1rem;
-    letter-spacing: 0;
-    font-weight: 900;
-    display: block;
-  }
-}
-@media only screen and (min-width: 2560px) {
-  main #main-container .display-card .modal {
-    display: block !important;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    background-color: red;
-    animation-name: modalopen;
-    animation-duration: 1s;
-  }
-  main #main-container .display-card .modal .modal-content {
-    margin: 2rem auto;
-    letter-spacing: -2px;
-  }
   main #main-container .display-card .modal .modal-content .close-modal-btn {
-    margin-top: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
   main #main-container .display-card .modal .modal-content .modal-header .modal-header-title {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   main #main-container .display-card .modal .modal-content .modal-header .modal-header-subtitle {
-    font-size: 2.5rem;
-    margin-top: -1.5rem;
+    font-size: 3.5rem;
   }
   main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-title {
-    font-size: 1.3rem;
-    letter-spacing: 0;
-    margin-top: 0.8rem;
+    font-size: 2.5rem;
   }
   main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-top: -1rem;
-    line-height: 1.6;
-    letter-spacing: 0;
+    font-size: 3rem;
   }
   main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle .modal-info-subtitle-link .modal-link-icon {
-    font-size: 1rem;
-    margin-left: 0.8rem;
+    font-size: 2rem;
   }
   main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-award {
-    font-size: 1.1rem;
-    letter-spacing: 0;
-  }
-  main #main-container .display-card .modal .modal-content .trailer-container {
-    margin-top: 1.5rem;
+    font-size: 2.5rem;
   }
   main #main-container .display-card .modal .modal-content .trailer-container a {
-    font-size: 1.1rem;
-    background-color: #ffa700;
-    letter-spacing: 0;
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 2500px) {
+  main #main-container .display-card .modal .modal-content .close-modal-btn {
+    margin-top: 2rem;
+    font-size: 4rem;
+  }
+  main #main-container .display-card .modal .modal-content .modal-header .modal-header-title {
+    font-size: 6rem;
+  }
+  main #main-container .display-card .modal .modal-content .modal-header .modal-header-subtitle {
+    font-size: 6.5rem;
+    line-height: 1;
+  }
+  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-title {
+    font-size: 3.5rem;
+  }
+  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle {
+    font-size: 4rem;
+  }
+  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle .modal-info-subtitle-link .modal-link-icon {
+    font-size: 3rem;
+  }
+  main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-award {
+    font-size: 3.5rem;
+  }
+  main #main-container .display-card .modal .modal-content .trailer-container a {
+    font-size: 4rem;
+    padding: 2rem 4rem;
   }
 }
 #section-portfolio {
@@ -772,16 +708,11 @@ main #main-container .display-card .modal .modal-content .trailer-container a:ho
   padding: 1rem;
   text-transform: uppercase;
 }
-#section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-header-text {
-  line-height: 1;
-}
 #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-header-text .title {
   font-size: 0.7rem;
   color: #e9e4e4;
 }
 #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-header-text .title h3 {
-  line-height: 1;
-  letter-spacing: -0.5px;
   margin-bottom: 0.5rem;
 }
 #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-header-text .title i {
@@ -794,19 +725,17 @@ main #main-container .display-card .modal .modal-content .trailer-container a:ho
 #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-header-text .subtitle {
   font-size: 0.9rem;
   text-transform: uppercase;
-  line-height: 1;
   color: #ffd251;
   font-weight: 900;
 }
 #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper .portfolio-content-title {
   font-weight: 500;
-  line-height: 1.1;
   margin-top: 0.8rem;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
 }
 #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper .portfolio-content-subtitle, #section-portfolio .portfolio-wrapper .portfolio-text-wrapper .portfolio-content-wrapper .subtitle-link {
   color: #34eaab;
-  line-height: 1.5;
+  line-height: 1;
   font-size: 0.8rem;
   font-weight: 700;
 }
@@ -913,9 +842,10 @@ main #main-container .display-card .modal .modal-content .trailer-container a:ho
 }
 
 #section-showreel {
-  padding: 12rem 0 1rem 0;
+  padding-top: 12rem;
+  padding-bottom: 4rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
 }
 #section-showreel .showreel-video-wrapper {
   position: relative;
@@ -932,25 +862,27 @@ main #main-container .display-card .modal .modal-content .trailer-container a:ho
   padding: 0 1rem;
   font-size: 1rem;
 }
-#section-showreel .showreel-text-wrapper p {
-  font-weight: 300;
-}
 #section-showreel .showreel-text-wrapper p span a {
   color: #1b1c1e;
   font-weight: 700;
-  background-color: #f00064;
   text-transform: lowercase;
-  padding: 0.2rem 0.5rem;
+  color: #f00064;
+}
+#section-showreel .showreel-text-wrapper p span a:hover {
+  background-color: #ffd251;
+  color: #1b1c1e;
 }
 #section-showreel .showreel-text-wrapper .download-cv {
-  margin-bottom: 2rem;
+  margin: 1rem 0;
 }
 #section-showreel .showreel-text-wrapper .download-cv a {
   color: #34eaab;
   font-weight: 900;
   text-transform: none;
-  letter-spacing: -0.5px;
-  font-size: 1.2rem;
+}
+#section-showreel .showreel-text-wrapper .download-cv a:hover {
+  background-color: #ffd251;
+  color: #1b1c1e;
 }
 
 .container-9 {
@@ -1224,8 +1156,8 @@ h5 {
   margin: 0;
   padding: 0;
   font-family: "Lato", Arial, Helvetica, sans-serif;
-  line-height: 1.6;
   box-sizing: border-box;
+  letter-spacing: -0.5px;
 }
 
 body {
@@ -1236,36 +1168,29 @@ body {
   display: flex;
   flex-direction: column;
   color: #e9e4e4;
-  /**************** CONTACT ****************/
-  /**************** MESSAGE SENT ****************/
+  min-height: 100vh;
   /**************** FOOTER ****************/
-  /**************** MEDIA QUERIES ****************/
 }
 body header {
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
   background-color: #1b1c1e;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.3);
 }
 body header .navbar-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
-}
-body header #hero-text-wrap {
-  letter-spacing: -0.5px;
+  padding: 2rem 0;
 }
 body header #hero-text-wrap h1 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  line-height: 1;
 }
 body header #hero-text-wrap h2 {
   font-weight: 900;
   font-size: 1rem;
-  line-height: 1;
   color: #34eaab;
 }
 body header nav {
@@ -1284,11 +1209,10 @@ body header nav .nav-links a {
   cursor: pointer;
   font-weight: 900;
   color: #1b1c1e;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: center;
   text-transform: uppercase;
   color: #e9e4e4;
-  letter-spacing: -1px;
 }
 body header nav .nav-links a:hover {
   transition: all ease-in 0.1s;
@@ -1304,83 +1228,6 @@ body header nav .nav-links .current:hover {
 body header nav .burguer {
   display: none;
   cursor: pointer;
-}
-body header nav .burguer #burguer-lines .line-1, body header nav .burguer #burguer-lines .line-2, body header nav .burguer #burguer-lines .line-3 {
-  width: 20px;
-  height: 3px;
-  margin: 3px 0;
-  background-color: #e9e4e4;
-}
-body #contact-form {
-  padding: 12rem 0 4rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 60%;
-}
-body #contact-form .form-field {
-  text-align: left;
-  width: 100%;
-}
-body #contact-form .form-field label {
-  display: block;
-  margin: 0.5rem 0;
-  font-weight: 300;
-}
-body #contact-form .form-field input {
-  border: none;
-  width: 100%;
-  padding: 0.5rem;
-  letter-spacing: 1px;
-  background-color: #e9e4e4;
-}
-body #contact-form .form-field input:focus {
-  outline-color: #ffd251;
-}
-body #contact-form .form-field textarea {
-  width: 100%;
-  padding: 0.5rem;
-  letter-spacing: 1px;
-  border: none;
-  height: 150px;
-  background-color: #e9e4e4;
-}
-body #contact-form .form-field textarea:focus {
-  outline-color: #ffd251;
-}
-body #contact-form .form-field span {
-  color: #ffd251;
-  padding-left: 0.5rem;
-}
-body #contact-form .form-pi {
-  margin: 0.5rem 0;
-  font-weight: 300;
-  font-size: 0.9rem;
-}
-body #contact-form .form-pi span {
-  color: #ffd251;
-  padding-left: 0.5rem;
-}
-body #contact-form button {
-  border: none;
-  padding: 0.5rem;
-  width: 20%;
-  margin-top: 2rem;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
-body #section-send-msg {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-body #section-send-msg img {
-  width: 30vw;
-}
-body #section-send-msg p {
-  margin-top: 2rem;
-  font-size: 1.2rem;
 }
 body footer {
   background-color: #1b1c1e;
@@ -1405,26 +1252,25 @@ body footer .footer-wrapper #footer-social i {
   padding: 0 1rem;
 }
 body footer .footer-wrapper #footer-social i:hover {
-  color: #462ad6;
+  color: rgb(43, 117, 186);
   transition: all 0.5s;
   cursor: pointer;
 }
 body footer .footer-wrapper #footer-contact a, body footer .footer-wrapper #footer-rights a {
+  letter-spacing: 3px;
   color: #e9e4e4;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 700;
   text-transform: lowercase;
-  letter-spacing: 3px;
 }
 body footer .footer-wrapper #footer-contact a:hover, body footer .footer-wrapper #footer-rights a:hover {
   color: #ffd251;
 }
 body footer .footer-wrapper #footer-rights {
   font-size: 0.7rem;
-  letter-spacing: 1px;
 }
 body footer .footer-wrapper #footer-rights img {
-  width: 70px;
+  width: 60px;
 }
 @keyframes carousel {
   from {
@@ -1442,87 +1288,66 @@ body footer .footer-wrapper #footer-rights img {
     opacity: 1;
   }
 }
-@media only screen and (max-width: 1023px) {
-  body header .navbar-wrapper .nav-links {
+
+/**************** MEDIA QUERIES ****************/
+@media only screen and (max-width: 768px) {
+  header .navbar-wrapper .nav-links {
     flex-direction: column;
     align-items: flex-end;
     text-align: start;
-    background-color: rgba(34, 34, 34, 0.9);
-    width: 100vw;
+    background-color: rgba(27, 28, 30, 0.8);
+    width: 100%;
     height: 100vh;
     transform: translateX(100%);
     position: absolute;
     right: 0;
-    top: 4.5rem;
+    top: 8rem;
+    padding: 2rem 2rem 0 0;
     transition: 0.3s ease-in;
-    margin-top: 4rem;
   }
-  body header .navbar-wrapper .nav-links li {
+  header .navbar-wrapper .nav-links li {
     padding: 2rem 3rem 0 0;
   }
-  body header .navbar-wrapper .nav-active {
+  header .navbar-wrapper .nav-active {
     transform: translateX(0%);
   }
-  body header .navbar-wrapper .burguer {
+  header .navbar-wrapper .burguer {
     display: block;
   }
-  body header #hero-text-wrap {
-    letter-spacing: 0;
-  }
-  body header #hero-text-wrap h1 {
-    font-size: 1rem;
-    font-weight: 500;
-  }
-  body header #hero-text-wrap h2 {
-    font-weight: 700;
-    font-size: 0.7rem;
-  }
-}
-@media only screen and (max-width: 767px) {
-  body header #hero-text-wrap {
-    letter-spacing: 0;
-  }
-  body header #hero-text-wrap h1 {
-    font-size: 1rem;
-    font-weight: 500;
-  }
-  body header #hero-text-wrap h2 {
-    font-weight: 700;
-    font-size: 0.7rem;
-  }
-  body footer .footer-wrapper {
+  footer .footer-wrapper {
     flex-direction: column;
   }
-  body footer .footer-wrapper #footer-social i {
-    padding: 0.7rem;
-  }
-  body footer .footer-wrapper #footer-contact {
-    padding: 1rem 0.5rem;
+  footer .footer-wrapper #footer-contact {
+    font-size: 0.2rem !important;
+    padding: 1rem 0;
+    margin: 1rem;
+    border-top: solid 5px #ffd251;
+    border-bottom: solid 5px #ffd251;
   }
 }
-@media only screen and (min-width: 2560px) {
-  body header #hero-text-wrap h1 {
-    font-size: 2.5rem;
-    font-weight: 900;
+@media only screen and (min-width: 2500px) {
+  header {
+    padding: 3rem 0;
   }
-  body header #hero-text-wrap h2 {
-    font-size: 1.8rem;
+  header #hero-text-wrap h1 {
+    font-size: 3rem !important;
   }
-  body header nav .nav-links a {
-    font-size: 2rem;
+  header #hero-text-wrap h2 {
+    font-size: 2.5rem !important;
   }
-  body footer {
-    font-size: 1.5rem;
+  header nav .nav-links li a {
+    font-size: 3rem;
   }
-  body footer .footer-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  footer {
+    font-size: 2rem !important;
   }
-  body footer .footer-wrapper #footer-contact a, body footer .footer-wrapper #footer-rights a {
-    font-size: 1.5rem;
+  footer .footer-wrapper #footer-contact a, footer .footer-wrapper #footer-rights a {
+    font-size: 2.5rem !important;
   }
-  body footer .footer-wrapper #footer-rights {
-    font-size: 1.2rem;
+  footer .footer-wrapper #footer-rights {
+    font-size: 2rem !important;
+  }
+  footer .footer-wrapper #footer-rights img {
+    width: 200px !important;
   }
 }/*# sourceMappingURL=style.css.map */

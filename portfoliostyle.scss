@@ -2,13 +2,16 @@
 	padding: 12rem 0 4rem 0;
 	display: flex;
 	gap: 1rem;
+	// line-height: 1;
 
 	.grid-col {
 		flex: 1;
+		// width: 50%;
 	}
 		
 	.portfolio-wrapper {
 		margin-top: 1rem;
+		// min-width: 250px;
 		background-color: $primary-color;
 		box-shadow:  10px 10px 20px #171819,
 				-5px -5px 5px #1f2023;
@@ -28,15 +31,15 @@
 			text-transform: uppercase;
 			
 			.portfolio-header-text {
-				line-height: 1;
+				// line-height: 1;
 
 				.title {
 					font-size: 0.7rem;
 					color: $light-color;
 
 					h3 {
-						line-height: 1;
-						letter-spacing: -0.5px;
+						// line-height: 1;
+						// letter-spacing: -0.5px;
 						margin-bottom: 0.5rem;
 					}
 
@@ -53,7 +56,7 @@
 				.subtitle {
 					font-size: 0.9rem;
 					text-transform: uppercase;
-					line-height: 1;
+					// line-height: 1;
 					color: #ffd251;
 					font-weight: 900;
 				}
@@ -62,14 +65,15 @@
 			.portfolio-content-wrapper {
 				.portfolio-content-title {
 					font-weight: 500;
-					line-height: 1.1;
+					// line-height: 1.1;
 					margin-top: 0.8rem;
-					font-size: 0.6rem;
+					font-size: 0.7rem;
 				}
 
 				.portfolio-content-subtitle, .subtitle-link {
 					color: #34eaab;
-					line-height: 1.5;
+					// line-height: 1.5;
+					line-height: 1;
 					font-size: 0.8rem;
 					font-weight: 700;
 
