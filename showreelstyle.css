@@ -216,62 +216,60 @@ h5 {
   margin: 4rem;
 }
 
-#section-about {
+#section-showreel {
   padding-top: 12rem;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 1fr;
 }
-#section-about .about-img-wrapper {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffd251;
+#section-showreel .showreel-video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
 }
-#section-about .about-img-wrapper img {
-  -o-object-fit: cover;
-     object-fit: cover;
+#section-showreel .showreel-video-wrapper iframe {
+  position: absolute;
   width: 100%;
-}
-#section-about .about-img-wrapper .figcaption {
   height: 100%;
-  font-weight: 900;
-  text-align: right;
+}
+#section-showreel .showreel-text-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  font-size: 3rem;
-  color: #ffa700;
-  text-transform: uppercase;
-  line-height: 0.8;
-}
-#section-about .about-text-wrapper {
-  display: flex;
-  flex-direction: column;
-  padding: 0 2rem;
+  padding: 0 1rem;
   font-size: 1rem;
 }
-#section-about .about-text-wrapper .about-text {
-  font-size: 1rem;
-  margin-top: 1rem;
-}
-#section-about .about-text-wrapper .about-text .about-text-important {
+#section-showreel .showreel-text-wrapper p span a {
+  color: #1b1c1e;
   font-weight: 700;
-}
-#section-about .about-text-wrapper .about-text .pink {
+  text-transform: lowercase;
   color: #f00064;
 }
-#section-about .about-text-wrapper .about-text .green {
+#section-showreel .showreel-text-wrapper p span a:hover {
+  background-color: #ffd251;
+  color: #1b1c1e;
+}
+#section-showreel .showreel-text-wrapper .download-cv {
+  margin: 1rem 0;
+}
+#section-showreel .showreel-text-wrapper .download-cv a {
   color: #34eaab;
+  font-weight: 900;
+  text-transform: none;
+}
+#section-showreel .showreel-text-wrapper .download-cv a:hover {
+  background-color: #ffd251;
+  color: #1b1c1e;
 }
 
 @media only screen and (max-width: 768px) {
-  #section-about {
-    padding-top: 8rem;
+  #section-showreel {
+    padding-top: 2rem;
     display: flex;
-    flex-direction: column-reverse;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 3rem;
   }
-  #section-about .about-text {
-    font-size: 0.8rem !important;
+}
+@media only screen and (min-width: 2560px) {
+  #section-showreel {
+    padding-top: 30rem;
   }
-}/*# sourceMappingURL=aboutstyle.css.map */
+}/*# sourceMappingURL=showreelstyle.css.map */

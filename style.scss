@@ -151,6 +151,14 @@ body {
 
 @media only screen and (max-width: 768px) {
 	header {
+		#hero-text-wrap {
+			h1 {
+				font-size: 0.9srem !important;
+			}
+			h2 {
+				font-size: 0.7rem !important;
+			}
+		}
 		.navbar-wrapper {
 			.nav-links {
 				flex-direction: column;
@@ -185,7 +193,7 @@ body {
 		.footer-wrapper {
 			flex-direction: column;
 			#footer-contact {
-				font-size: 0.2rem !important;
+				// font-size: 0.2rem !important;
 				padding: 1rem 0;
 				margin: 1rem;
 				border-top: solid 5px $secondary-color;
