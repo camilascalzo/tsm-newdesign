@@ -440,29 +440,33 @@ main #main-container {
   padding-top: 15rem;
   display: grid;
   gap: 0.5rem;
-  grid-template-areas: "img-24 img-23 img-22 img-21" "img-20 img-19 img-18 img-16" "img-15 img-14 img-1 img-2 " "img-3 img-4 img-5 img-6";
+  grid-template-areas: "img-16 img-24 img-22 img-26" "img-23 img-20 img-27 img-28" "img-21 img-15 img-17 img-18 " "img-19 img-14 img-2 img-7";
 }
 main #main-container #img-1 {
   grid-area: img-1;
+  display: none;
 }
 main #main-container #img-2 {
   grid-area: img-2;
 }
 main #main-container #img-3 {
   grid-area: img-3;
+  display: none;
 }
 main #main-container #img-4 {
   grid-area: img-4;
+  display: none;
 }
 main #main-container #img-5 {
   grid-area: img-5;
+  display: none;
 }
 main #main-container #img-6 {
   grid-area: img-6;
+  display: none;
 }
 main #main-container #img-7 {
   grid-area: img-7;
-  display: none;
 }
 main #main-container #img-13 {
   grid-area: img-13;
@@ -503,6 +507,16 @@ main #main-container #img-24 {
 }
 main #main-container #img-25 {
   grid-area: img-25;
+  display: none;
+}
+main #main-container #img-26 {
+  grid-area: img-26;
+}
+main #main-container #img-27 {
+  grid-area: img-27;
+}
+main #main-container #img-28 {
+  grid-area: img-28;
 }
 main #main-container .display-card {
   display: flex;
@@ -627,7 +641,7 @@ main #main-container .display-card .modal .modal-content .trailer-container a:ho
 @media only screen and (max-width: 769px) {
   main #main-container {
     padding-top: 12rem;
-    grid-template-areas: "img-24" "img-23" "img-22" "img-21" "img-20" "img-19" "img-18" "img-16" "img-15" "img-14" "img-1" "img-2" "img-3" "img-4" "img-5" "img-6";
+    grid-template-areas: "img-16" "img-24" "img-22" "img-26" "img-23" "img-20" "img-27" "img-28" "img-21" "img-15" "img-17" "img-18" "img-19" "img-14" "img-2" "img-7";
   }
   main #main-container .display-card .modal .modal-content .close-modal-btn {
     font-size: 3rem;
