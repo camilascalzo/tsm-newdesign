@@ -783,8 +783,7 @@ main #main-container .display-card .modal .modal-content .trailer-container a:ho
 }
 #section-portfolio .portfolio-wrapper .modal-portfolio-carousel .modal-portfolio-wrapper .close-portfolio-carousel {
   text-align: right;
-  padding: 2rem;
-  margin: 1rem;
+  margin: 2rem 3rem;
   font-size: 1.5rem;
   cursor: pointer;
   color: #e9e4e4;
@@ -796,8 +795,7 @@ main #main-container .display-card .modal .modal-content .trailer-container a:ho
   color: #292828;
 }
 #section-portfolio .portfolio-wrapper .modal-portfolio-carousel .modal-portfolio-wrapper .modal-portfolio-video-wrapper {
-  width: 70%;
-  height: 40%;
+  width: 60%;
   margin: 1rem auto;
   display: flex;
   flex-direction: column;
