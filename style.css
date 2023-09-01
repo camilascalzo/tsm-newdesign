@@ -437,7 +437,7 @@ h5 {
 }
 
 main #main-container {
-  padding-top: 15rem;
+  padding-top: 12rem;
   display: grid;
   gap: 0.5rem;
   grid-template-areas: "img-16 img-24 img-22 img-26" "img-23 img-20 img-27 img-28" "img-21 img-15 img-17 img-18 " "img-19 img-14 img-2 img-7";
