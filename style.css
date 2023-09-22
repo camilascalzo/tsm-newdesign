@@ -644,28 +644,28 @@ main #main-container .display-card .modal .modal-content .trailer-container a:ho
     grid-template-areas: "img-16" "img-24" "img-22" "img-26" "img-23" "img-20" "img-27" "img-28" "img-21" "img-15" "img-17" "img-18" "img-19" "img-14" "img-2" "img-7";
   }
   main #main-container .display-card .modal .modal-content .close-modal-btn {
-    font-size: 3rem;
+    font-size: 1.2rem;
   }
   main #main-container .display-card .modal .modal-content .modal-header .modal-header-title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   main #main-container .display-card .modal .modal-content .modal-header .modal-header-subtitle {
-    font-size: 3.5rem;
+    font-size: 1.5rem;
   }
   main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-title {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle {
-    font-size: 3rem;
+    font-size: 1rem;
   }
   main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-subtitle .modal-info-subtitle-link .modal-link-icon {
-    font-size: 2rem;
+    font-size: 0.9rem;
   }
   main #main-container .display-card .modal .modal-content .modal-info-container .modal-info-award {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
   main #main-container .display-card .modal .modal-content .trailer-container a {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 }
 @media only screen and (min-width: 2500px) {
@@ -1122,7 +1122,7 @@ h5 {
 
 @media only screen and (max-width: 768px) {
   #section-showreel {
-    padding-top: 2rem;
+    padding-top: 10rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
