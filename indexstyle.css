@@ -340,7 +340,6 @@ main #main-container .display-card .modal .modal-content {
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
-  letter-spacing: -2px;
 }
 main #main-container .display-card .modal .modal-content .close-modal-btn {
   margin-top: 0.5rem;
@@ -409,7 +408,6 @@ main #main-container .display-card .modal .modal-content .trailer-container a {
   background-color: #ffa700;
   padding: 1rem;
   color: #1b1c1e;
-  letter-spacing: 0;
 }
 main #main-container .display-card .modal .modal-content .trailer-container a:hover {
   background-color: #34eaab;

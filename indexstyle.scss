@@ -78,7 +78,7 @@ main {
 					display: flex;
 					flex-direction: column;
 					text-transform: uppercase;
-					letter-spacing: -2px;
+					// letter-spacing: -2px;
 	
 					.close-modal-btn {
 						margin-top: 0.5rem;
@@ -156,7 +156,6 @@ main {
 							background-color: $yellow;
 							padding: 1rem;
 							color: $primary-color;
-							letter-spacing: 0;
 	
 							&:hover {
 								background-color:$green;

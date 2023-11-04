@@ -28,21 +28,22 @@
 			text-transform: uppercase;
 			
 			.portfolio-header-text {
-				// line-height: 1;
 
 				.title {
 					font-size: 0.7rem;
 					color: $light-color;
 
 					h3 {
-						// line-height: 1;
-						// letter-spacing: -0.5px;
 						margin-bottom: 0.5rem;
 					}
 
 					i {
 						margin-left: 0.3rem;
 						font-size: 0.6rem;
+						color: $blue;
+						&:hover {
+							color: #f00064;
+						}
 					}
 					
 					&:hover {
@@ -53,7 +54,6 @@
 				.subtitle {
 					font-size: 0.9rem;
 					text-transform: uppercase;
-					// line-height: 1;
 					color: #ffd251;
 					font-weight: 900;
 				}
@@ -62,14 +62,12 @@
 			.portfolio-content-wrapper {
 				.portfolio-content-title {
 					font-weight: 500;
-					// line-height: 1.1;
 					margin-top: 0.8rem;
 					font-size: 0.7rem;
 				}
 
 				.portfolio-content-subtitle, .subtitle-link {
 					color: #34eaab;
-					// line-height: 1.5;
 					line-height: 1;
 					font-size: 0.8rem;
 					font-weight: 700;
@@ -78,6 +76,10 @@
 						i {
 							margin-left: 0.3rem;
 							font-size: 0.6rem;
+							color: $blue;
+							&:hover {
+								color: #f00064;
+							}
 						}
 						&:hover {
 							color: #f00064;
@@ -165,7 +167,7 @@
 									margin-top: 2rem;
 									font-weight: 900;
 									font-size: 1.2rem;
-									letter-spacing: -1px;
+									// letter-spacing: -1px;
 									
 									&:hover {
 										background-color: $secondary-color;
