@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-$primary-color: #222222;
 $primary-color: #1b1c1e;
 $secondary-color: #ffd251;
 $light-color: #e9e4e4;
@@ -8,21 +7,20 @@ $prueba-color: #DBD9D9;
 $mid-color: #3a3a3a;
 $dark-color: #292828;
 $pink: #f00064;
-$blue: #462ad6;
 $blue: rgb(43, 117, 186);
 $green: #34eaab;
 $yellow:#ffa700;
 
 .container {
-    &-9 {width: 90%; margin: auto;}
-    &-8 {width: 80%; margin: auto;}
-    &-7 {width: 70%; margin: auto;}
-    &-6 {width: 60%; margin: auto;}
-    &-5 {width: 50%; margin: auto;}
-  }
+	&-9 {width: 90%; margin: auto;}
+	&-8 {width: 80%; margin: auto;}
+	&-7 {width: 70%; margin: auto;}
+	&-6 {width: 60%; margin: auto;}
+	&-5 {width: 50%; margin: auto;}
+}
 
-
-a {text-decoration: none; 
+a {
+	text-decoration: none; 
   text-transform: uppercase;
   &:hover {cursor: pointer;}
 }
@@ -30,6 +28,7 @@ a {text-decoration: none;
 ul {list-style: none;}
 
 .p-u {text-transform: uppercase;}
+
 .p-custom {color: $secondary-color}
 
 h5 {line-height: 2;}
@@ -128,42 +127,119 @@ h5 {line-height: 2;}
 }
 
 .py {
-    &-1 {padding: 1rem 0;}
-    &-2 {padding: 2rem 0;}
-    &-3 {padding: 3rem 0;}
-    &-4 {padding: 4rem 0;}
-  }
-  .px {
-    &-1 {padding: 0 1rem;}
-    &-2 {padding: 0 2rem;}
-    &-3 {padding: 0 3rem;}
-    &-4 {padding: 0 4rem;}
-  }
-  .pa {
-    &-1 {padding: 1rem;}
-    &-2 {padding: 2rem;}
-    &-3 {padding: 0 3rem;}
-    &-4 {padding: 0 4rem;}
+	&-1 {padding: 1rem 0;}
+	&-2 {padding: 2rem 0;}
+	&-3 {padding: 3rem 0;}
+	&-4 {padding: 4rem 0;}
+}
 
-  }
-  
-  .my {
-    &-1 {margin: 1rem 0;}
-    &-2 {margin: 2rem 0;}
-    &-3 {margin: 3rem 0;}
-    &-4 {margin: 4rem 0;}
-  }
-  .mx {
-    &-1 {margin: 0 1rem;}
-    &-2 {margin: 0 2rem;}
-    &-3 {margin: 0 3rem;}
-    &-4 {margin: 0 4rem;}
-  }
-  .my {
-    &-1 {margin: 1rem;}
-    &-2 {margin: 2rem;}
-    &-3 {margin: 3rem;}
-    &-4 {margin: 4rem;}
-  }
+.px {
+	&-1 {padding: 0 1rem;}
+	&-2 {padding: 0 2rem;}
+	&-3 {padding: 0 3rem;}
+	&-4 {padding: 0 4rem;}
+}
 
+.pa {
+	&-1 {padding: 1rem;}
+	&-2 {padding: 2rem;}
+	&-3 {padding: 0 3rem;}
+	&-4 {padding: 0 4rem;}
+}
   
+.my {
+	&-1 {margin: 1rem 0;}
+	&-2 {margin: 2rem 0;}
+	&-3 {margin: 3rem 0;}
+	&-4 {margin: 4rem 0;}
+}
+.mx {
+	&-1 {margin: 0 1rem;}
+	&-2 {margin: 0 2rem;}
+	&-3 {margin: 0 3rem;}
+	&-4 {margin: 0 4rem;}
+}
+.my {
+	&-1 {margin: 1rem;}
+	&-2 {margin: 2rem;}
+	&-3 {margin: 3rem;}
+	&-4 {margin: 4rem;}
+}
+
+.loader {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border: 4px solid $yellow;
+	border-top: 4px solid $pink;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	animation: spin 2s linear infinite;
+}
+	
+@keyframes spin {
+	0% { transform: translate(-50%, -50%) rotate(0deg); }
+	100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.cookie-banner {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba($color: $mid-color, $alpha: 0.8);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.cookie-policy {
+		padding: 4rem;
+		line-height: 1.8;
+		font-size: 1.1rem;
+
+		a {
+			text-transform: lowercase;
+			color: $green;
+		}
+	}
+
+	.accept-cookies-btn-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.accept-cookies-btn {
+			background-color: $light-color;
+			border: none;
+			padding: 0.5rem 1rem;
+			font-weight: 700;
+			text-transform: lowercase;
+			font-size: 1.1rem;
+			&:hover {
+				cursor: pointer;
+				background-color: $secondary-color;
+				transition: all 0.5s; 
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.cookie-banner {
+		.cookie-policy {
+			padding: 1.5rem;
+			font-size: 0.8rem;
+		}
+
+		.accept-cookies-btn-container {						
+			.accept-cookies-btn {
+				padding: 0.3rem 0.6rem;
+				font-size: .8rem;
+			}
+		}
+	}
+}  

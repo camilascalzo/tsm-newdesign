@@ -1,16 +1,20 @@
+const openCarouselBtn = document.querySelectorAll(".watch-btn");
+const openCarouselBtnArr = Array.from(openCarouselBtn).entries();
+const closeModalBtn = document.querySelectorAll(".close-portfolio-carousel");
+const closeModalBtnArr = Array.from(closeModalBtn).entries();
+const modalVideo = document.getElementsByClassName("modal-portfolio-carousel");
+const nextBtn = document.querySelectorAll(".btn-next");
+
 // MASONRY
 var colc = new Colcade( '.grid', {
   columns: '.grid-col',
   items: '.grid-item'
 });
 
-//MODAL
-const openCarouselBtn = document.querySelectorAll(".watch-btn");
-const openCarouselBtnArr = Array.from(openCarouselBtn).entries();
-const closeModalBtn = document.querySelectorAll(".close-portfolio-carousel");
-const closeModalBtnArr = Array.from(closeModalBtn).entries();
-const modalVideo = document.getElementsByClassName("modal-portfolio-carousel");
-const nextBtn = document.querySelectorAll(".btn-next").forEach(item => { item.addEventListener("click", changeSlideNext)});
+// MODAL
+nextBtn.forEach(item => { 
+	item.addEventListener("click", changeSlideNext);
+});
 
 let sliderArr;
 let currentSlide;
